@@ -5,10 +5,69 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <style>
+            #zoomC {
+                /* (A) DIMENSIONS */
+                width: 100%;
+                height: 30rem;
+                
+                /* (B) BACKGROUND IMAGE */
+                background: url("../data/organigrama.png");
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+        <script>
+            // CREDITS : https://www.cssscript.com/image-zoom-pan-hover-detail-view/
+            var addZoom = (target) => {
+                // (A) GET CONTAINER + IMAGE SOURCE
+                let container = document.getElementById(target),
+                    imgsrc = container.currentStyle || window.getComputedStyle(container, false);
+                    imgsrc = imgsrc.backgroundImage.slice(4, -1).replace(/"/g, "");
+            
+                // (B) LOAD IMAGE + ATTACH ZOOM
+                let img = new Image();
+                img.src = imgsrc;
+                img.onload = () => {
+                // (B1) CALCULATE ZOOM RATIO
+                let ratio = img.naturalHeight / img.naturalWidth,
+                    percentage = ratio * 100 + "%";
+            
+                // (B2) ATTACH ZOOM ON MOUSE MOVE
+                container.onmousemove = (e) => {
+                    let rect = e.target.getBoundingClientRect(),
+                        xPos = e.clientX - rect.left,
+                        yPos = e.clientY - rect.top,
+                        xPercent = xPos / (container.clientWidth / 100) + "%",
+                        yPercent = yPos / ((container.clientWidth * ratio) / 100) + "%";
+            
+                    Object.assign(container.style, {
+                    backgroundPosition: xPercent + " " + yPercent,
+                    backgroundSize: img.naturalWidth + "px"
+                    });
+                };
+            
+                // (B3) RESET ZOOM ON MOUSE LEAVE
+                container.onmouseleave = (e) => {
+                    Object.assign(container.style, {
+                    backgroundPosition: "center",
+                    backgroundSize: "cover"
+                    });
+                };
+                }
+            };
+            
+            // (C) ATTACH FOLLOW ZOOM
+            window.onload = () => { addZoom("zoomC"); };
+        </script>
     </head>
     <body>
         <div class="container">
-            <h1>Organigrama</h1>
+            <h1 class="text-center" >Organigrama Presidencia Municipal de Jiménez del Téul</h1>
+        </div>
+        <div class="container">
+            <!--<img src="../data/organigrama.png" class="img-fluid" alt="Organigrama presidencia municipal Jiménez del Téul">-->
+            <div id="zoomC"></div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
