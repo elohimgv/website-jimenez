@@ -1,121 +1,152 @@
 <!DOCTYPE html>
 <html lang="es-mx">
-  <head>
-    <title>Página de inicio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <style>
-      #address_presidencia, #copy_rights {
-        font-size: 0.9rem;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Start Header -->
-    <header>
-      <div class="container">
-        <img src="data/header_gobierno_de_jimenez.jpg" class="img-fluid" alt="Centro de Jiménez del Téul">
-      </div>
-    </header>
-    <!-- End Header -->
-    <div class="container">
-      <!-- Start Navbar -->
-      <nav class="navbar navbar-expand-lg" style="background-color: #dcdcdc;">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <!-- Burguer icon -->
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Gobierno de Jiménez</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <!-- Activate with a responsive behaviour -->
-            <div class="offcanvas-body">
-              <ul class="navbar-nav flex-grow-1 pe-1">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <!-- Start Dropdwon toggle -->
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gobierno</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="gobierno/presidenta-municipal.html">Presidenta municipal</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="gobierno/organigrama.html">Organigrama</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="gobierno/directorio.html">Directorio</a></li>
-                  </ul>
-                </li>
-                <!-- End Dropdwon toggle -->
-                <li class="nav-item">
-                  <a class="nav-link" href="municipio.html">Municipio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/transparencia/transparencia.html">Transparencia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </div> 
-        </div> 
-      </nav>
-      <!-- End Navbar -->
-    </div>
-    <!-- Start Main content -->
-    <main>
 
-    </main>
-    <!-- End Main content -->
-    <!-- Start footer -->
-    <footer>
-      <div class="container text-white" style="background-color: #b4262e;">
-        <!-- Start row -->
-        <div class="row">
-          <!-- Start col -->
-          <div id="imagotipo_positivo_h_ayuntamiento" class="col pt-2 text-center">
-            <a href="index.html"><img class="navbar-brand img-fluid" src="data/imagotipo_positivo_h_ayuntamiento.png"  alt="Imagotipo H. Ayuntamiento de Jiménez del Téul 2021 - 2024"></a>
-          </div>
-          <!-- End col -->
-          <!-- Start col -->
-          <div id="address_presidencia" class="col-sm pt-3 text-center">
-            <ul class="list-unstyled">
-              <li>Presidencia Municipal de Jiménez del Téul</li>
-              <li>Calle Morelos #22</li>
-              <li>Cololonia Centro CP 99280</li>
-              <li>01 (457) 988 30 45</li>
-              <li>01 (457) 988 30 46</li>
-              <li>01 (457) 988 31 60</li>
-              <li>Jiménez del Téul, Zacatecas, Mex.</li>
-            </ul>
-          </div>
-          <!-- End col -->
-          <!-- Start col -->
-          <div class="col-sm text-center">
-            <h3 class="pt-1">#Jiménez Transparente</h3>
-            <a id="logo_transparencia" href="/transparencia/transparencia.html"><img class="img-fluid" src="data/logo_transparencia.png" alt="Logo Sistema Nacional de Transparencia"></a>
-          </div>
-          <!-- End col -->
-        </div> 
-        <!-- End row -->
-      </div>
-      <div class="container border-top border-dark text-white" style="background-color: #b4262e;">
-        <!-- Start row -->
-        <div class="row">
-          <!-- Start col -->
-          <div class="col">
-            <p id="copy_rights" class="text-center p-2">Gobierno Muncipal de Jiménez del Téul &copy 2021 - 2024</p>
-          </div>
-          <!-- End col -->
-        </div>
-        <!-- End row -->
-      </div>
-    </footer>
-    <!-- End footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>¡Bienvenidos! Gobierno Municipal de Jiménez del Téul </title>
+	<link rel="icon" href="data/favicon.ico" type="image/x-icon" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<style>
+		#address_presidencia,
+		#copy_rights {
+			font-size: 0.9rem;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Start row -->
+		<div class="row">
+			<!-- Start col -->
+			<div class="col">
+				<!-- Start Header -->
+				<header>
+					<img src="data/header_gobierno_de_jimenez.jpg" class="img-fluid" alt="Centro de Jiménez del Téul">
+				</header>
+				<!-- End Header -->
+			</div>
+			<!-- End col -->
+		</div>
+		<!-- End row -->
+	</div>
+	<div class="container">
+		<!-- Start Navbar -->
+		<nav class="navbar navbar-expand-lg" style="background-color: #dcdcdc;">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<!-- Burguer icon -->
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Gobierno de Jiménez</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<!-- Activate with a responsive behaviour -->
+					<div class="offcanvas-body">
+						<ul class="navbar-nav flex-grow-1 pe-1">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<!-- Start Dropdwon toggle -->
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">Gobierno</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="gobierno/presidenta-municipal.html">Presidenta
+											municipal</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="gobierno/organigrama.html">Organigrama</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="gobierno/directorio.html">Directorio</a></li>
+								</ul>
+							</li>
+							<!-- End Dropdwon toggle -->
+							<li class="nav-item">
+								<a class="nav-link" href="municipio.html">Municipio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/transparencia/transparencia.html">Transparencia</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+	</div>
+	<!-- Start Main content -->
+	<main>
+
+	</main>
+	<!-- End Main content -->
+	<div class="container">
+		<!-- Start footer -->
+		<footer>
+			<div class="container text-white" style="background-color: #b4262e;">
+				<!-- Start row -->
+				<div class="row">
+					<!-- Start col -->
+					<div id="imagotipo_positivo_h_ayuntamiento" class="col pt-2 text-center">
+						<a href="index.html"><img class="navbar-brand img-fluid"
+								src="data/imagotipo_positivo_h_ayuntamiento.png"
+								alt="Imagotipo H. Ayuntamiento de Jiménez del Téul 2021 - 2024"></a>
+					</div>
+					<!-- End col -->
+					<!-- Start col -->
+					<div id="address_presidencia" class="col-sm pt-3 text-center">
+						<ul class="list-unstyled">
+							<li>Presidencia Municipal de Jiménez del Téul</li>
+							<li>Calle Morelos #22</li>
+							<li>Cololonia Centro CP 99280</li>
+							<li>01 (457) 988 30 45</li>
+							<li>01 (457) 988 30 46</li>
+							<li>01 (457) 988 31 60</li>
+							<li>Jiménez del Téul, Zacatecas, Mex.</li>
+						</ul>
+					</div>
+					<!-- End col -->
+					<!-- Start col -->
+					<div class="col-sm text-center">
+						<h3 class="pt-1">#Jiménez Transparente</h3>
+						<a id="logo_transparencia" href="/transparencia/transparencia.html"><img class="img-fluid"
+								src="data/logo_transparencia.png" alt="Logo Sistema Nacional de Transparencia"></a>
+					</div>
+					<!-- End col -->
+				</div>
+				<!-- End row -->
+			</div>
+			<div class="container border-top border-dark text-white" style="background-color: #b4262e;">
+				<!-- Start row -->
+				<div class="row">
+					<!-- Start col -->
+					<div class="col">
+						<p id="copy_rights" class="text-center p-2">Gobierno Muncipal de Jiménez del Téul &copy 2021 -
+							2024</p>
+					</div>
+					<!-- End col -->
+				</div>
+				<!-- End row -->
+			</div>
+		</footer>
+		<!-- End footer -->
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
