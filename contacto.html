@@ -93,21 +93,31 @@
 		<main>
 			<section>
 				<form action="https://formsubmit.co/elohim.guevara@gmail.com" method="POST">
-					<div class="mb-3">
-						<label for="name" class="form-label">Nombre</label>
-						<input type="text" name="name" class="form-control" id="name" placeholder="Juan Pablo" required>
-					</div>
-					<div class="mb-3">
-						<label for="InputEmail" class="form-label">Correo electrónico</label>
-						<input type="email" name="email" class="form-control" id="InputEmail" placeholder="nombre@ejemplo.com" required>
-					</div>
-					<div class="mb-3">
-						<label for="message" class="form-label">Asunto</label>
-						<textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje." required></textarea>
-					</div>
-					<button type="submit" class="btn btn-success">Enviar</button>
-					<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-					<input type="hidden" name="_subject" value="¡Nuevo correo!">
+					<ul class="list-unstyled">
+						<li>
+							<div class="mb-3">
+								<label for="name" class="form-label">Nombre</label>
+								<input type="text" name="name" class="form-control" id="name" placeholder="Juan Pablo" required>
+							</div>
+						</li>
+						<li>
+							<div class="mb-3">
+								<label for="InputEmail" class="form-label">Correo electrónico</label>
+								<input type="email" name="email" class="form-control" id="InputEmail" placeholder="nombre@ejemplo.com" required>
+							</div>
+						</li>
+						<li>
+							<div class="mb-3">
+								<label for="message" class="form-label">Asunto</label>
+								<textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje." required></textarea>
+							</div>
+						</li>
+						<li>
+							<button type="submit" class="btn btn-success">Enviar</button>
+							<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+							<input type="hidden" name="_subject" value="¡Nuevo correo!">
+						</li>
+					</ul>
 				</form>
 			</section>
 		</main>
