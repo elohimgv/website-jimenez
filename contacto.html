@@ -88,20 +88,47 @@
 		</nav>
 		<!-- End Navbar -->
 	</div>
-	<div class="container">
-		<h1>Página de contacto</h1>
-	</div>
 	<!-- Start Main content -->
-	<main>
-
-	</main>
+	<div class="container">
+		<main>
+			<section>
+				<form action="https://formsubmit.co/elohim.guevara@gmail.com" method="POST">
+					<ul class="list-unstyled">
+						<li>
+							<div class="mb-3">
+								<label for="name" class="form-label">Nombre</label>
+								<input type="text" name="name" class="form-control" id="name" placeholder="Juan Pablo" required>
+							</div>
+						</li>
+						<li>
+							<div class="mb-3">
+								<label for="InputEmail" class="form-label">Correo electrónico</label>
+								<input type="email" name="email" class="form-control" id="InputEmail" placeholder="nombre@ejemplo.com" required>
+							</div>
+						</li>
+						<li>
+							<div class="mb-3">
+								<label for="message" class="form-label">Asunto</label>
+								<textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje." required></textarea>
+							</div>
+						</li>
+						<li>
+							<button type="submit" class="btn btn-success">Enviar</button>
+							<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+							<input type="hidden" name="_subject" value="¡Nuevo correo!">
+						</li>
+					</ul>
+				</form>
+			</section>
+		</main>
+	</div>
 	<!-- End Main fcontent -->
 	<div class="container">
 		<!-- Start footer -->
 		<footer>
 			<div class="container text-white" style="background-color: #b4262e;">
 				<!-- Start row -->
-				<div class="row">
+				<div class="row mt-3">
 					<!-- Start col -->
 					<div id="imagotipo_positivo_h_ayuntamiento" class="col pt-2 text-center">
 						<a href="index.html"><img class="navbar-brand img-fluid"
