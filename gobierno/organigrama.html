@@ -15,6 +15,14 @@
 			font-size: 0.9rem;
 		}
 
+		#organigrama {
+			color: white;
+		}
+
+		#organigrama:hover {
+			color: #dcdcdc;;
+		}
+
 		#zoomC {
 			/* (A) DIMENSIONS */
 			width: 100%;
@@ -72,19 +80,17 @@
 </head>
 
 <body>
-	<div class="container">
+	<header class="container">
 		<!-- Start row -->
 		<div class="row">
 			<!-- Start col -->
 			<div class="col">
-				<header>
-					<img src="../data/header_organigrama.jpg" class="img-fluid" alt="Trabajadores de la presidencia">
-				</header>
+				<img src="../data/header_organigrama.jpg" class="img-fluid" alt="Trabajadores de la presidencia">
 			</div>
 			<!-- End col -->
 		</div>
 		<!-- End row -->
-	</div>
+	</header>
 	<div class="container">
 		<!-- Start Navbar -->
 		<nav class="navbar navbar-expand-lg" style="background-color: #dcdcdc;">
@@ -140,17 +146,23 @@
 		</nav>
 		<!-- End Navbar -->
 	</div>
-	<div class="container">
-		<div class="row mt-3">
-			<div class="col">
-				<h1 class="text-center">Organigrama Presidencia Municipal de Jiménez del Téul</h1>
+	<main class="container">
+		<div class="container">
+			<div class="row" style="background-color: #256e56">
+				<div class="col mt-3 text-white">
+					<h1>Organigrama</h1>
+					<p>
+						Consulta la <a id="organigrama" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f2b/organigrama.png" target="_blank">organización jerárquica</a> del Gobierno Municipal de Jiménez del Téul.
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<!--<img src="../data/organigrama.png" class="img-fluid" alt="Organigrama presidencia municipal Jiménez del Téul">-->
-		<div id="zoomC"></div>
-	</div>
+		<div class="row">
+			<div class="col">
+				<!--<div id="zoomC" class="img-fluid"></div>--> 
+			</div>
+		</div>
+	</main>
 	<div class="container">
 		<!-- Start footer -->
 		<footer>
