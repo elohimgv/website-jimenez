@@ -5,94 +5,31 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Conoce el organigrama del Municipio de Jiménez del Téul</title>
-	<meta name="description"
-		content="Consulta el organigrama del Gobierno Municipal de Jiménez del Téul. Dependencia y titular de la dependencia.">
+	<title>Finanzas - municipio de Jiménez del Téul</title>
 	<link rel="icon" href="../data/favicon.ico" type="image/x-icon" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-	<style>
-		#address_presidencia,
-		#copy_rights {
-			font-size: 0.9rem;
-		}
-
-		#organigrama {
-			color: white;
-		}
-
-		#organigrama:hover {
-			color: #dcdcdc;
-		}
-
-		#zoomC {
-			/* (A) DIMENSIONS */
-			width: 100%;
-			height: 30rem;
-
-			/* (B) BACKGROUND IMAGE */
-			background: url("../data/organigrama.png");
-			background-position: center;
-			background-size: cover;
-		}
-	</style>
-	<script>
-		// CREDITS : https://www.cssscript.com/image-zoom-pan-hover-detail-view/
-		var addZoom = (target) => {
-			// (A) GET CONTAINER + IMAGE SOURCE
-			let container = document.getElementById(target),
-				imgsrc = container.currentStyle || window.getComputedStyle(container, false);
-			imgsrc = imgsrc.backgroundImage.slice(4, -1).replace(/"/g, "");
-
-			// (B) LOAD IMAGE + ATTACH ZOOM
-			let img = new Image();
-			img.src = imgsrc;
-			img.onload = () => {
-				// (B1) CALCULATE ZOOM RATIO
-				let ratio = img.naturalHeight / img.naturalWidth,
-					percentage = ratio * 100 + "%";
-
-				// (B2) ATTACH ZOOM ON MOUSE MOVE
-				container.onmousemove = (e) => {
-					let rect = e.target.getBoundingClientRect(),
-						xPos = e.clientX - rect.left,
-						yPos = e.clientY - rect.top,
-						xPercent = xPos / (container.clientWidth / 100) + "%",
-						yPercent = yPos / ((container.clientWidth * ratio) / 100) + "%";
-
-					Object.assign(container.style, {
-						backgroundPosition: xPercent + " " + yPercent,
-						backgroundSize: img.naturalWidth + "px"
-					});
-				};
-
-				// (B3) RESET ZOOM ON MOUSE LEAVE
-				container.onmouseleave = (e) => {
-					Object.assign(container.style, {
-						backgroundPosition: "center",
-						backgroundSize: "cover"
-					});
-				};
-			}
-		};
-
-		// (C) ATTACH FOLLOW ZOOM
-		window.onload = () => { addZoom("zoomC"); };
-	</script>
+        <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
-	<header class="container">
+	<div class="container">
 		<!-- Start row -->
 		<div class="row">
 			<!-- Start col -->
 			<div class="col">
-				<img src="../data/header_organigrama.jpg" loading="lazy" class="img-fluid" alt="Trabajadores de la presidencia">
+				<!-- Start Header -->
+				<header>
+					<div class="container text-white p-3" style="background-color: #256e56">
+						<h1 class="display-1 text-center">Título V: Ley General de Contabilidad Gubernamental</h1>
+					</div>
+				</header>
+				<!-- End Header -->
 			</div>
 			<!-- End col -->
 		</div>
 		<!-- End row -->
-	</header>
+	</div>
 	<div class="container">
 		<!-- Start Navbar -->
 		<nav class="navbar navbar-expand-lg" style="background-color: #dcdcdc;">
@@ -119,16 +56,17 @@
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 									aria-expanded="false">Gobierno</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="presidenta-municipal.html">Presidenta
+									<li><a class="dropdown-item" href="../gobierno/presidenta-municipal.html">Presidenta
 											municipal</a></li>
 									<li>
 										<hr class="dropdown-divider">
 									</li>
-									<li><a class="dropdown-item" href="organigrama.html">Organigrama</a></li>
+									<li><a class="dropdown-item" href="../gobierno/organigrama.html">Organigrama</a>
+									</li>
 									<li>
 										<hr class="dropdown-divider">
 									</li>
-									<li><a class="dropdown-item" href="directorio.html">Directorio</a></li>
+									<li><a class="dropdown-item" href="../gobierno/directorio.html">Directorio</a></li>
 								</ul>
 							</li>
 							<!-- End Dropdwon toggle -->
@@ -138,8 +76,8 @@
 							<li class="nav-item">
 								<a class="nav-link" href="/transparencia/transparencia.html">Transparencia</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/finanzas/finanzas.html">Finanzas</a>
+                            <li class="nav-item">
+								<a class="nav-link" href="./finanzas.html">Finanzas</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="../contacto.html">Contacto</a>
@@ -151,38 +89,111 @@
 		</nav>
 		<!-- End Navbar -->
 	</div>
-	<main class="container">
-		<div class="container">
-			<div class="row" style="background-color: #256e56">
-				<div class="col mt-3 text-white">
-					<h1>Organigrama</h1>
-					<p>
-						Consulta la <a id="organigrama"
-							href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f2b/_organigrama.png"
-							target="_blank">organización jerárquica</a> del Gobierno Municipal de Jiménez del Téul.
-						Un diagrama de jerarquía muestra la composición de un organismo y su relación de dependencia
-						entre
-						cada departamento.
-					</p>
+	<div class="container">
+		<!-- Start row -->
+		<div class="row mt-3">
+			<p class="lead">
+				Conforme al <a class="text-muted" href="https://www.coneval.org.mx/Paginas/principal.aspx" target="_blank">CONEVAL</a> (Consejo Nacional de Evaluación de la Política de Desarrollo Social):
+			</p>
+            <blockquote cite="https://www.coneval.org.mx/Evaluacion/NME/Paginas/ley_contabilidad_gubernamental.aspx">
+                <p>
+                    <em>La Ley General de Contabilidad Gubernamental (LGCG) establece los criterios generales para la contabilidad gubernamental y la emisión de información financiera de los entes 
+                        públicos, con el fin de lograr su adecuada armonización, además de contribuir a medir la transparencia, eficacia, economía y eficiencia del proceso presupuestario..</em>
+                </p>
+            </blockquote>
+			<p class="lead">
+				Para más información visita la <a class="text-muted" href="https://www.coneval.org.mx/Evaluacion/NME/Paginas/ley_contabilidad_gubernamental.aspx" target="_blank">Ley General de Contabilidad Gubernamental</a>
+				en el CONEVAL.
+			</p>
+		</div>
+		<!-- End row -->
+	</div>
+	<div class="container">
+		<!-- Start Main content -->
+		<main class="container">
+			<!-- Start year 2019 -->
+			<div class="row">
+				<div class="col pt-2" style="background-color: #256e56;">
+					<h2 class="text-white" >2019</h2>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<!--<div id="zoomC" class="img-fluid"></div>-->
+			<div class="row">
+				<div class="col">
+					<ul>
+						<li><a class="text-muted" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2019/cuenta_publica_jimenez_2019.pdf" target="_blank">Cuenta pública</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</main>
-	<div class="container">
+			<!-- End year 2019 -->
+			<!-- Start year 2020 -->
+			<div class="row">
+				<div class="col pt-2" style="background-color: #256e56;">
+					<h2 class="text-white" >2020</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<!--<ul>
+						<li><a class="text-muted" href="">#</a></li>
+					</ul>-->
+				</div>
+			</div>
+			<!-- End year 2020 -->
+			<!-- Start year 2021 -->
+			<div class="row">
+				<div class="col pt-2" style="background-color: #256e56;">
+					<h2 class="text-white" >2021</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<!--<ul>
+						<li><a class="text-muted" href="">#</a></li>
+					</ul>-->
+				</div>
+			</div>
+			<!-- End year 2021 -->
+			<!-- Start year 2022 -->
+			<div class="row">
+				<div class="col pt-2" style="background-color: #256e56;">
+					<h2 class="text-white" >2022</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<!--<ul>
+						<li><a class="text-muted" href="">#</a></li>
+					</ul>-->
+				</div>
+			</div>
+			<!-- End year 2022 -->
+			<!-- Start year 2023 -->
+			<div class="row">
+				<div class="col pt-2" style="background-color: #256e56;">
+					<h2 class="text-white" >2023</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<!--<ul>
+						<li><a class="text-muted" href="">#</a></li>
+					</ul>-->
+				</div>
+			</div>
+			<!-- End year 2023 -->
+		</main>
+		<!-- End Main content -->
+	</div>
+	<div class="container pt-5">
 		<!-- Start footer -->
 		<footer>
-			<div class="container text-white" style="background-color: #b4262e;">
+			<div class="container" style="background-color: #dcdcdc;">
 				<!-- Start row -->
 				<div class="row">
 					<!-- Start col -->
-					<div id="imagotipo_positivo_h_ayuntamiento" class="col pt-2 text-center">
+					<div id="imagotipo_color_h_ayuntamiento" class="col pt-2 text-center">
 						<a href="../index.html"><img class="navbar-brand img-fluid"
-								src="../data/imagotipo_positivo_h_ayuntamiento.png"
+								src="../data/imagotipo_color_h_ayuntamiento.png"
 								alt="Imagotipo H. Ayuntamiento de Jiménez del Téul 2021 - 2024"></a>
 					</div>
 					<!-- End col -->
@@ -209,7 +220,7 @@
 				</div>
 				<!-- End row -->
 			</div>
-			<div class="container border-top border-dark text-white" style="background-color: #b4262e;">
+			<div class="container border-top border-dark" style="background-color: #dcdcdc;">
 				<!-- Start row -->
 				<div class="row">
 					<!-- Start col -->
