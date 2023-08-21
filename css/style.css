@@ -1,3 +1,14 @@
+/* Data of years */
+/* Class for the background color predetermined */
+/*.year {
+	background-color: #256e56;
+  }*/
+  
+/* Class for the background color selected */
+/*.year.selected {
+	background-color: #dcdcdc;
+}*/
+
 /* To lists*/
 ul {
 	list-style: none;
