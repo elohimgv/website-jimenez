@@ -1,31 +1,18 @@
-.body {
-    overflow: hidden;
+/* Data of years */
+/* Class for the background color predetermined */
+/*.year {
+	background-color: #256e56;
+  }*/
+  
+/* Class for the background color selected */
+/*.year.selected {
+	background-color: #dcdcdc;
+}*/
+
+/* To lists*/
+ul {
+	list-style: none;
 }
-
-/* Multilevel dropdown menu */
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-	.dropdown-menu li{ position: relative; 	}
-	.nav-item .submenu{ 
-		display: none;
-		position: absolute;
-		left:100%; top:-7px;
-	}
-	.nav-item .submenu-left{ 
-		right:100%; left:auto;
-	}
-	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
-	.dropdown-menu > li:hover > .submenu{ display: block; }
-}	
-/* ============ desktop view .end// ============ */
-
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu{
-      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-  }
-}	
-/* ============ small devices .end// ============ */
 
 /* To footer */
 #address_presidencia,
