@@ -70,7 +70,7 @@ function toggleYears(letter) {
 	// New array with only the data that correspond to the current office
 	selectData(ID_FOR_EACH_OFFICE, dataYearsArr, letter, officeAndHisDataOfEachYear);
 	// New array with only tha underline that correspond to the current office
-	selectData(ID_FOR_EACH_OFFICE,activeUnderlineArr, letter, yearActiveUnderline);
+	selectData(ID_FOR_EACH_OFFICE, activeUnderlineArr, letter, yearActiveUnderline);
 
 	// Only the data choosed
 	const years = document.querySelectorAll(officeAndHisYears.join(', '));
@@ -78,6 +78,7 @@ function toggleYears(letter) {
 	const activeUnderline = document.querySelectorAll(yearActiveUnderline.join(', '));
 	// Values that are present in class property; see HTML document
 	const classList = ['text-white', 'text-decoration-none'];
+
 	// To process all years from the office selected
 	for (let count = 0; count < years.length; count++) {
 		const year = years[count];
@@ -97,32 +98,32 @@ function toggleYears(letter) {
 }
 
 // When a year is selected, only show the info that correspond to it 
-function toggleDataFromYears(dataIdYear, idYear) {
+function toggleDataFromYears(dataIdYear, idYearUnderline) {
 	const data = document.querySelector(dataIdYear);
-	const originalClassList = ['text-white', 'text-decoration-none'];
-	const activeUnderline = document.querySelector(idYear);
+	const activeUnderline = document.querySelector(idYearUnderline);
 	const allActiveUnderlines = document.querySelectorAll(activeUnderlineArr.join(', '));
 	const dataYear = document.querySelectorAll(dataYearsArr.join(', '));
+	const originalClassList = ['text-white', 'text-decoration-none'];
 	// Obtain the value from class attribute
 	const classList = activeUnderline.getAttribute('class');
 	// Divide the value from attribute into an array
 	const valuesClass = classList.split(' ');
 	// Delete the value "text-decoration-none" from array
-	valuesClass.splice(valuesClass.indexOf('text-decoration-none'), 1);
+	valuesClass.splice(valuesClass.indexOf('text-decoration-none'), 1);	
 	// Establish the new value from class attribute
 	activeUnderline.setAttribute('class', valuesClass.join(' '));
-  
+	
   	// If the links to files are hidden, we show it, otherwise, we hidden it.
 	if (data.style.display === 'none') {
 		// Show the data links
-		data.style.display = 'block';  
+		data.style.display = 'block';
 		// Hide the data links of the other year 
 		for (let count = 0; count < dataYear.length; count++) {
 			const underli = allActiveUnderlines[count];
-			const yearLink = dataYear[count];
-			if (yearLink !== data && underli !== activeUnderline) {
-				yearLink.style.display = 'none';
-				underli.setAttribute('class', originalClassList.join(' '))
+			const dataLink = dataYear[count];
+			if (dataLink !== data && underli !== activeUnderline) {
+				dataLink.style.display = 'none';
+				underli.setAttribute('class', originalClassList.join(' '));
 			}
 		}
 	} else {
