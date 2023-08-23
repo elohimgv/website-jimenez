@@ -9,12 +9,7 @@
 	<link rel="icon" href="../../data/favicon.ico" type="image/x-icon" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-	<style>
-		#address_presidencia,
-		#copy_rights {
-			font-size: 0.9rem;
-		}
-	</style>
+	<link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
@@ -25,7 +20,7 @@
 			<div class="col">
 				<!-- Start Header -->
 				<header>
-					<div class="container text-white p-3" style="background-color: #7E2BA7;">
+					<div class="container text-white p-3" style="background-color: #256e56">
 						<h1 class="display-4 text-center">Artículo 39 - Fracción 29</h1>
 					</div>
 				</header>
@@ -108,36 +103,61 @@
 		<!-- End row -->
 	</div>
 	<div class="container">
-		<div class="container">
+		<div class="container" style="background-color: #256e56">
 			<!-- Start row -->
 			<div class="row">
 				<!-- Start col -->
-				<div class="col" style="background-color: #7E2BA7;">
-					<!-- Nav -->
-					<ul class="nav">
-						<li class="nav-item dropdown">
-							<!-- Start Dropdwon toggle -->
-							<a class="nav-link dropdown-toggle text-white" href="#" role="button"
-								data-bs-toggle="dropdown" aria-expanded="false">Fracción 29</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item"
-										href="/transparencia/articulo-39/data/f29/art39-fraccion29_2021.html">Año
-										2021</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item"
-										href="/transparencia/articulo-39/data/f29/art39-fraccion29_2022.html">Año
-										2022</a></li>
-								<!--<li><hr class="dropdown-divider"></li>-->
-							</ul>
-						</li>
-						<!-- End Dropdwon toggle -->
-					</ul>
+				<!-- Start col 2021 TE -->
+				<div class="col text-center border-bottom border-end" id="year2021SE"  style="display: block;">
+					<a class="text-white text-decoration-none" href="#" id="underlined2021SE" onclick="toggleDataFromYears('#data2021SE', '#underlined2021SE', '#year2021SE')"><h4>2021</h4></a>
+				</div>
+				<!-- End col-->
+				<!-- Start col 2022 TE -->
+				<div class="col text-center border-bottom border-end" id="year2022SE"  style="display: block;">
+					<a class="text-white text-decoration-none" href="#" id="underlined2022SE" onclick="toggleDataFromYears('#data2022SE', '#underlined2022SE', '#year2022SE')"><h4>2022</h4></a>
 				</div>
 				<!-- End col -->
 			</div>
 			<!-- End row -->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col data 2021 TE -->
+				<div class="col" id="data2021SE" style="display: none;">
+					<ul>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2021/sesion_y_acta_1.PDF" target="_blank">Informe de sesión y acta # 1</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2021/sesion_y_acta_2.PDF" target="_blank">Informe de sesión y acta # 2</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2021/sesion_y_acta_3.PDF" target="_blank">Informe de sesión y acta # 3</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2021/sesion_y_acta_4.PDF" target="_blank">Informe de sesión y acta # 4</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2021/sesion_y_acta_5.PDF" target="_blank">Informe de sesión y acta # 5</a></li>
+						<!-- Here, add more files-->
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col data 2022 TE -->
+				<div class="col" id="data2022SE" style="display: none;">
+					<ul>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_8.pdf" target="_blank">Informe de sesión y acta # 8</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_9.pdf" target="_blank">Informe de sesión y acta # 9</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_10.pdf" target="_blank">Informe de sesión y acta # 10</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_11.pdf" target="_blank">Informe de sesión y acta # 11</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_12.pdf" target="_blank">Informe de sesión y acta # 12</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_13.pdf" target="_blank">Informe de sesión y acta # 13</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_14_y_15.pdf" target="_blank">Informe de sesión y acta # 14 y # 15</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_16.pdf" target="_blank">Informe de sesión y acta # 16</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_17.pdf" target="_blank">Informe de sesión y acta # 17</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_18.pdf" target="_blank">Informe de sesión y acta # 18</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_19.pdf" target="_blank">Informe de sesión y acta # 19</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f29/2022/sesion_y_acta_20.pdf" target="_blank">Informe de sesión y acta # 20</a></li>
+						<!-- Here, add more files-->
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
 		</div>
 	</div>
 	<div class="container">
@@ -195,6 +215,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
 		crossorigin="anonymous"></script>
+	<script src="../../js/script.js"></script>
 </body>
 
 </html>
