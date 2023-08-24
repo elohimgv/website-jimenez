@@ -2,24 +2,32 @@
 // of acronym 'DA'(A) which is Desarrollo Agropecuario.
 // 'DIF'(F) which is Desarrollo Integral de la Familia.
 // 'DES'(S) which is Desarrollo Económico y Social.
-const ID_FOR_EACH_OFFICE = ['A', 'F', 'S'];
+// 'TE' (E) which is Tesorería. It not appear, because art39-fraccin29.html
+// file doesn't need it. 
+const ID_FOR_EACH_OFFICE = ['A', 'F', 'S']; 
 
 let yearsArr = [
-  '#year-2021DA', '#year-2022DA', '#year-2023DA',
-  '#year-2021DIF', '#year-2022DIF', '#year-2023DIF',
-  '#year-2021DES', '#year-2022DES', '#year-2023DES'
+  '#year2021DA', '#year2022DA', '#year2023DA',
+  '#year2021DIF', '#year2022DIF', '#year2023DIF',
+  '#year2021DES', '#year2022DES', '#year2023DES',
+  '#year2021TE', '#year2022TE', '#year2023TE',
+  '#year2021SE', '#year2022SE', '#year2023SE'
 ];
 
 let dataYearsArr = [
-  '#data-year-2021DA', '#data-year-2022DA', '#data-year-2023DA',
-  '#data-year-2021DIF', '#data-year-2022DIF', '#data-year-2023DIF',
-  '#data-year-2021DES', '#data-year-2022DES', '#data-year-2023DES'
+  '#data2021DA', '#data2022DA', '#data2023DA',
+  '#data2021DIF', '#data2022DIF', '#data2023DIF',
+  '#data2021DES', '#data2022DES', '#data2023DES',
+  '#data2021TE', '#data2022TE', '#data2023TE',
+  '#data2021SE', '#data2022SE', '#data2023SE'
 ];
 
 let activeUnderlineArr = [
-  '#year-2021-underlinedDA', '#year-2022-underlinedDA', '#year-2023-underlinedDA',
-  '#year-2021-underlinedDIF', '#year-2022-underlinedDIF', '#year-2023-underlinedDIF',
-  '#year-2021-underlinedDES', '#year-2022-underlinedDES', '#year-2023-underlinedDES'
+  '#underlined2021DA', '#underlined2022DA', '#underlined2023DA',
+  '#underlined2021DIF', '#underlined2022DIF', '#underlined2023DIF',
+  '#underlined2021DES', '#underlined2022DES', '#underlined2023DES',
+  '#underlined2021TE', '#underlined2022TE', '#underlined2023TE',
+  '#underlined2021SE', '#underlined2022SE', '#underlined2023SE'
 ];
 
 function selectData(ID, currentArray, letter, newArray) {
