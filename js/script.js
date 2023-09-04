@@ -3,7 +3,9 @@
 // 'DIF'(F) which is Desarrollo Integral de la Familia.
 // 'DES'(S) which is Desarrollo Económico y Social.
 // 'TE' (E) which is Tesorería. It not appear, because art39-fraccin29.html
-// file doesn't need it. 
+// file doesn't need it.
+// 'CO' (O) which is Tesorería. It not appear, because art39-fraccin12.html
+// file doesn't need it.
 const ID_FOR_EACH_OFFICE = ['A', 'F', 'S']; 
 
 let yearsArr = [
@@ -11,7 +13,8 @@ let yearsArr = [
   '#year2021DIF', '#year2022DIF', '#year2023DIF',
   '#year2021DES', '#year2022DES', '#year2023DES',
   '#year2021TE', '#year2022TE', '#year2023TE',
-  '#year2021SE', '#year2022SE', '#year2023SE'
+  '#year2021SE', '#year2022SE', '#year2023SE',
+  '#year2021CO', '#year2022CO', '#year2023CO'
 ];
 
 let dataYearsArr = [
@@ -19,7 +22,8 @@ let dataYearsArr = [
   '#data2021DIF', '#data2022DIF', '#data2023DIF',
   '#data2021DES', '#data2022DES', '#data2023DES',
   '#data2021TE', '#data2022TE', '#data2023TE',
-  '#data2021SE', '#data2022SE', '#data2023SE'
+  '#data2021SE', '#data2022SE', '#data2023SE',
+  '#data2021CO', '#data2022CO', '#data2023CO'
 ];
 
 let activeUnderlineArr = [
@@ -27,7 +31,8 @@ let activeUnderlineArr = [
   '#underlined2021DIF', '#underlined2022DIF', '#underlined2023DIF',
   '#underlined2021DES', '#underlined2022DES', '#underlined2023DES',
   '#underlined2021TE', '#underlined2022TE', '#underlined2023TE',
-  '#underlined2021SE', '#underlined2022SE', '#underlined2023SE'
+  '#underlined2021SE', '#underlined2022SE', '#underlined2023SE',
+  '#underlined2021CO', '#underlined2022CO', '#underlined2023CO'
 ];
 
 function selectData(ID, currentArray, letter, newArray) {

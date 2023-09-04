@@ -9,6 +9,14 @@
 	background-color: #dcdcdc;
 }*/
 
+#organigrama {
+	color: white;
+}
+
+#organigrama:hover {
+	color: #dcdcdc;
+}
+
 /* To lists*/
 ul {
 	list-style: none;
