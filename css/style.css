@@ -9,8 +9,14 @@
 	background-color: #dcdcdc;
 }*/
 
-#underlined2023TE {
+/* Not links but clickable element */
+.clickable {
 	cursor: pointer;
+}
+
+/* To represent null value */
+.undefined {
+	background-color: #dcdcdc;;
 }
 
 #organigrama {
