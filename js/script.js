@@ -6,33 +6,24 @@
 // file doesn't need it.
 // 'CO' (O) which is Tesorería. It not appear, because art39-fraccin12.html
 // file doesn't need it.
-const ID_FOR_EACH_OFFICE = ['A', 'F', 'S']; 
+const ID_FOR_EACH_OFFICE = ['A', 'B', 'C']; 
 
 let yearsArr = [
-  '#year2021DA', '#year2022DA', '#year2023DA',
-  '#year2021DIF', '#year2022DIF', '#year2023DIF',
-  '#year2021DES', '#year2022DES', '#year2023DES',
-  '#year2021TE', '#year2022TE', '#year2023TE',
-  '#year2021SE', '#year2022SE', '#year2023SE',
-  '#year2021CO', '#year2022CO', '#year2023CO'
+  '#_2021A', '#_2022A', '#_2023A',
+  '#_2021B', '#_2022B', '#_2023B',
+  '#_2021C', '#_2022C', '#_2023C'
 ];
 
 let dataYearsArr = [
-  '#data2021DA', '#data2022DA', '#data2023DA',
-  '#data2021DIF', '#data2022DIF', '#data2023DIF',
-  '#data2021DES', '#data2022DES', '#data2023DES',
-  '#data2021TE', '#data2022TE', '#data2023TE',
-  '#data2021SE', '#data2022SE', '#data2023SE',
-  '#data2021CO', '#data2022CO', '#data2023CO'
+  '#data2021A', '#data2022A', '#data2023A',
+  '#data2021B', '#data2022B', '#data2023B',
+  '#data2021C', '#data2022C', '#data2023C'
 ];
 
 let activeUnderlineArr = [
-  '#underlined2021DA', '#underlined2022DA', '#underlined2023DA',
-  '#underlined2021DIF', '#underlined2022DIF', '#underlined2023DIF',
-  '#underlined2021DES', '#underlined2022DES', '#underlined2023DES',
-  '#underlined2021TE', '#underlined2022TE', '#underlined2023TE',
-  '#underlined2021SE', '#underlined2022SE', '#underlined2023SE',
-  '#underlined2021CO', '#underlined2022CO', '#underlined2023CO'
+  '#inactive2021A', '#inactive2022A', '#inactive2023A', 
+  '#inactive2021B', '#inactive2022B', '#inactive2023B',
+  '#inactive2021C', '#inactive2022C', '#inactive2023C'
 ];
 
 function selectData(ID, currentArray, letter, newArray) {
@@ -90,7 +81,7 @@ function toggleYears(letter) {
 	const dataYears = document.querySelectorAll(officeAndHisDataOfEachYear.join(', '));
 	const activeUnderline = document.querySelectorAll(yearActiveUnderline.join(', '));
 	// Values that are present in class property; see HTML document
-	const classList = ['text-white', 'text-decoration-none'];
+	const classList = ['text-white', 'text-decoration-none', 'clickable'];
 
 	// To process all years from the office selected
 	for (let count = 0; count < years.length; count++) {
@@ -100,6 +91,8 @@ function toggleYears(letter) {
 		// If the link is hidden, we show it; otherwise, we hidden it.
 		if (year.style.display === 'none') {
 			year.style.display = 'block';
+			// Reset to the original values in class attribute
+			line.setAttribute('class', classList.join(' '));
 		} else {
 			year.style.display = 'none';
 			// If the container of the links to PDF's are shown it, we reset it
@@ -116,7 +109,7 @@ function toggleDataFromYears(dataIdYear, idYearUnderline) {
 	const activeUnderline = document.querySelector(idYearUnderline);
 	const allActiveUnderlines = document.querySelectorAll(activeUnderlineArr.join(', '));
 	const dataYear = document.querySelectorAll(dataYearsArr.join(', '));
-	const originalClassList = ['text-white', 'text-decoration-none'];
+	const originalClassList = ['text-white', 'text-decoration-none', 'clickable'];
 	// Obtain the value from class attribute
 	const classList = activeUnderline.getAttribute('class');
 	// Divide the value from attribute into an array
@@ -142,7 +135,7 @@ function toggleDataFromYears(dataIdYear, idYearUnderline) {
 	} else {
 		data.style.display = 'none';
 		// Reset to the original values in class attribute
-		valuesClass.splice(0, 0, 'text-white', 'text-decoration-none');
+		valuesClass.splice(0, 0, 'text-white', 'text-decoration-none', 'clickable');
 		activeUnderline.setAttribute('class', valuesClass.join(' '));
 	}																							
 }
