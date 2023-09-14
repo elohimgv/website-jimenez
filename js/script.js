@@ -1,11 +1,9 @@
-// Id for each office, is the last letter, for example,
-// of acronym 'DA'(A) which is Desarrollo Agropecuario.
-// 'DIF'(F) which is Desarrollo Integral de la Familia.
-// 'DES'(S) which is Desarrollo Económico y Social.
-// 'TE' (E) which is Tesorería. It not appear, because art39-fraccin29.html
-// file doesn't need it.
-// 'CO' (O) which is Tesorería. It not appear, because art39-fraccin12.html
-// file doesn't need it.
+// The items inside ID_FOR_EACH_OFFICE means,
+// the ordinal number, from top to bottom on 
+// html document. For example A = 1, B = 2 
+// and C = 3. It represent the position of the
+// office. Not all fraction has explicity
+// the office name; sometimes just the years. 
 const ID_FOR_EACH_OFFICE = ['A', 'B', 'C']; 
 
 let yearsArr = [
