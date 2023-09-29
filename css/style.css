@@ -19,16 +19,18 @@
 	background-color: #dcdcdc;;
 }
 
+#ley_organica, 
 #organigrama {
 	color: white;
 }
 
+#ley_organica:hover,
 #organigrama:hover {
 	color: #dcdcdc;
 }
 
 /* To lists*/
-ul {
+.not-bullet {
 	list-style: none;
 }
 
