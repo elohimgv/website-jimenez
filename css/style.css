@@ -34,9 +34,20 @@
 	list-style: none;
 }
 
+.white_bullet {
+	list-style-type: none;
+}
+
+.white_bullet li::before {
+	content: "\2022"; /* Unicode for bullet symbol */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+  	width: 1em; /* Also needed for space (tweak if needed) */
+  	margin-left: -1em; /* Also needed for space (tweak if needed) */
+	color: white;
+}
+
 /* To footer */
 #address_presidencia,
 #copy_rights {
 	font-size: 0.9rem;
 }
-
