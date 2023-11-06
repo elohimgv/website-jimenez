@@ -4,24 +4,36 @@
 // and C = 3. It represent the position of the
 // office. Not all fraction has explicity
 // the office name; sometimes just the years. 
-const ID_FOR_EACH_OFFICE = ['A', 'B', 'C']; 
+const ID_FOR_EACH_OFFICE = ['A', 'B', 'C', 'D']; 
 
 let yearsArr = [
   '#_2021A', '#_2022A', '#_2023A',
   '#_2021B', '#_2022B', '#_2023B',
-  '#_2021C', '#_2022C', '#_2023C'
+  '#_2021C', '#_2022C', '#_2023C',
+  '#el_aA', '#el_bA', '#el_cA', '#el_dA', '#el_eA', '#el_fA', // remanent to do something; finanzas.
+  '#el_aB', '#el_bB', '#el_cB', '#el_dB', '#el_eB', '#el_fB',
+  '#el_aC', '#el_bC', '#el_cC', '#el_dC', '#el_eC', '#el_fC',
+  '#el_aD', '#el_bD', '#el_cD', '#el_dD', '#el_eD', '#el_fD'
 ];
 
 let dataYearsArr = [
   '#data2021A', '#data2022A', '#data2023A',
   '#data2021B', '#data2022B', '#data2023B',
-  '#data2021C', '#data2022C', '#data2023C'
+  '#data2021C', '#data2022C', '#data2023C',
+  '#dataaA', '#databA', '#datacA', '#datadA', '#dataeA', '#datafA', // remanent to do something; finanzas.
+  '#dataaB', '#databB', '#datacB', '#datadB', '#dataeB', '#datafB',
+  '#dataaC', '#databC', '#datacC', '#datadC', '#dataeC', '#datafC',
+  '#dataaD', '#databD', '#datacD', '#datadD', '#dataeD', '#datafD'
 ];
 
-let activeUnderlineArr = [
+let activeUnderlineArr = [ 
   '#inactive2021A', '#inactive2022A', '#inactive2023A', 
   '#inactive2021B', '#inactive2022B', '#inactive2023B',
-  '#inactive2021C', '#inactive2022C', '#inactive2023C'
+  '#inactive2021C', '#inactive2022C', '#inactive2023C',
+  '#inactive_aA', '#inactive_bA', '#inactive_cA', '#inactive_dA', '#inactive_eA', '#inactive_fA', // remanent to do something; finanzas.
+  '#inactive_aB', '#inactive_bB', '#inactive_cB', '#inactive_dB', '#inactive_eB', '#inactive_fB',
+  '#inactive_aC', '#inactive_bC', '#inactive_cC', '#inactive_dC', '#inactive_eC', '#inactive_fC',
+  '#inactive_aD', '#inactive_bD', '#inactive_cD', '#inactive_dD', '#inactive_eD', '#inactive_fD'
 ];
 
 function selectData(ID, currentArray, letter, newArray) {
