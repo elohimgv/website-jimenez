@@ -4,7 +4,7 @@
 // and C = 3. It represent the position of the
 // office. Not all fraction has explicity
 // the office name; sometimes just the years. 
-const ID_FOR_EACH_OFFICE = ['A', 'B', 'C', 'D']; 
+const ID_FOR_EACH_OFFICE = ['A', 'B', 'C', 'D', 'E']; 
 
 let yearsArr = [
   '#_2021A', '#_2022A', '#_2023A',
@@ -13,7 +13,8 @@ let yearsArr = [
   '#el_aA', '#el_bA', '#el_cA', '#el_dA', '#el_eA', '#el_fA', // remanent to do something; finanzas.
   '#el_aB', '#el_bB', '#el_cB', '#el_dB', '#el_eB', '#el_fB',
   '#el_aC', '#el_bC', '#el_cC', '#el_dC', '#el_eC', '#el_fC',
-  '#el_aD', '#el_bD', '#el_cD', '#el_dD', '#el_eD', '#el_fD'
+  '#el_aD', '#el_bD', '#el_cD', '#el_dD', '#el_eD', '#el_fD',
+  '#el_aE', '#el_bE', '#el_cE', '#el_dE', '#el_eE', '#el_fE'
 ];
 
 let dataYearsArr = [
@@ -23,7 +24,8 @@ let dataYearsArr = [
   '#dataaA', '#databA', '#datacA', '#datadA', '#dataeA', '#datafA', // remanent to do something; finanzas.
   '#dataaB', '#databB', '#datacB', '#datadB', '#dataeB', '#datafB',
   '#dataaC', '#databC', '#datacC', '#datadC', '#dataeC', '#datafC',
-  '#dataaD', '#databD', '#datacD', '#datadD', '#dataeD', '#datafD'
+  '#dataaD', '#databD', '#datacD', '#datadD', '#dataeD', '#datafD',
+  '#dataaE', '#databE', '#datacE', '#datadE', '#dataeE', '#datafE'
 ];
 
 let activeUnderlineArr = [ 
@@ -33,7 +35,8 @@ let activeUnderlineArr = [
   '#inactive_aA', '#inactive_bA', '#inactive_cA', '#inactive_dA', '#inactive_eA', '#inactive_fA', // remanent to do something; finanzas.
   '#inactive_aB', '#inactive_bB', '#inactive_cB', '#inactive_dB', '#inactive_eB', '#inactive_fB',
   '#inactive_aC', '#inactive_bC', '#inactive_cC', '#inactive_dC', '#inactive_eC', '#inactive_fC',
-  '#inactive_aD', '#inactive_bD', '#inactive_cD', '#inactive_dD', '#inactive_eD', '#inactive_fD'
+  '#inactive_aD', '#inactive_bD', '#inactive_cD', '#inactive_dD', '#inactive_eD', '#inactive_fD',
+  '#inactive_aE', '#inactive_bE', '#inactive_cE', '#inactive_dE', '#inactive_eE', '#inactive_fE'
 ];
 
 function selectData(ID, currentArray, letter, newArray) {
