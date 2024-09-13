@@ -5,24 +5,29 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 	<title>Directorio municipal del Gobierno de Jimenez del Téul: Titular de cada departamento, correo electrónico y
 		número de teléfono.</title>
 	<meta name="description"
 		content="Conoce a cada uno de los departmentos que integran el Gobierno Municipal de Jiménez del Téul. Titular, correo electrónico y número de teléfono.">
 	<link rel="icon" href="../data/favicon.ico" type="image/x-icon" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="kanit-light">
 	<header class="container">
 		<!-- Start row -->
 		<div class="row">
 			<!-- Start col -->
 			<div class="col">
-				<img src="../data/header_directorio.jpg" loading="lazy" class="img-fluid"
-					alt="Parte frontal de la presidencia municipal">
+				<img src="../data/header.png" loading="lazy" class="img-fluid"
+					alt="">
 			</div>
 			<!-- End col -->
 		</div>
@@ -30,7 +35,7 @@
 	</header>
 	<div class="container">
 		<!-- Start Navbar -->
-		<nav class="navbar navbar-expand-lg" style="background-color: #dcdcdc;">
+		<nav class="navbar navbar-expand-lg" style="background-color: #71c5ea;">
 			<div class="container-fluid">
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
 					data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -47,14 +52,14 @@
 					<div class="offcanvas-body">
 						<ul class="navbar-nav flex-grow-1 pe-1">
 							<li class="nav-item">
-								<a class="nav-link" href="../index.html">Inicio</a>
+								<a class="text-color-bk nav-link" href="../index.html">Inicio</a>
 							</li>
 							<li class="nav-item">
 								<!-- Start Dropdwon toggle -->
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								<a class="text-color-bk nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 									aria-expanded="false">Gobierno</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="presidenta-municipal.html">Presidenta
+									<li><a class="dropdown-item" href="presidente.html">Presidente
 											municipal</a></li>
 									<li>
 										<hr class="dropdown-divider">
@@ -81,16 +86,16 @@
 							</li>
 							<!-- End Dropdwon toggle -->
 							<li class="nav-item">
-								<a class="nav-link" href="../municipio.html">Municipio</a>
+								<a class="text-color-bk nav-link" href="../municipio.html">Municipio</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/transparencia/transparencia.html">Transparencia</a>
+								<a class="text-color-bk nav-link" href="/transparencia/transparencia.html">Transparencia</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="/finanzas/finanzas.html">Finanzas</a>
+								<a class="text-color-bk nav-link" href="/finanzas/finanzas.html">Finanzas</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../contacto.html">Contacto</a>
+								<a class="text-color-bk nav-link" href="../contacto.html">Contacto</a>
 							</li>
 						</ul>
 					</div>
@@ -102,291 +107,362 @@
 	<!-- Start main content -->
 	<main class="container">
 		<div class="container">
-			<div class="row" style="background-color: #256e56;">
+			<div class="row" style="background-color: #be3a34;">
 				<div class="col mt-3 text-white">
 					<h1>Directorio Municipal</h1>
 					<p>
-						Cada departamento cumple su función conforme a lo establecido en la <a id="ley_organica" href="https://websitejimenez.s3.us-east-2.amazonaws.com/art39/fracciones/f3/ley_organica.pdf" target="_blank">Ley Orgánica del Municipio</a>. 
+						Cada departamento cumple su función conforme a lo establecido en la <a id="ley_organica" href="#" target="_blank">Ley Orgánica del Municipio</a>. 
 						Conoce al encargado de cada departamento y las opciones de contacto. Estamos para resolver tus 
 						dudas y quejas. Acercate y conócenos.
 					</p>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<h3 class="mt-3">Archivo histórico</h3>
-				<ul>
-					<li>
-						Titular: David Fernández Herrera
-					</li>
-					<li>
-						Correo electrónico:
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Agua potable</h3>
-				<ul>
-					<li>
-						Titular: Arnulfo Sánchez Ibarra
-					</li>
-					<li>
-						Correo electrónico: Profesanchez1418@hotmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Casa de la cultura</h3>
-				<ul>
-					<li>
-						Titular: Jesús Montes Santoyo
-					</li>
-					<li>
-						Correo electrónico: Chuyms21santoyo@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-46
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Catastro</h3>
-				<ul>
-					<li>
-						Titular: Claudia Cecilia Hernández González
-					</li>
-					<li>
-						Correo electrónico: Ceci-211185@hotmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-31-60
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Contralor</h3>
-				<ul>
-					<li>
-						Titular: Octavio Herrera Argumedo
-					</li>
-					<li>
-						Correo electrónico: contraloriajimenez@outlook.es
-					</li>
-					<li>
-						Teléfono: 457-988-30-46
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Correo</h3>
-				<ul>
-					<li>
-						Titular: Maricela Fernández Hernández
-					</li>
-					<li>
-						Correo electrónico:
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Deportes</h3>
-				<ul>
-					<li>
-						Titular: José Estrella Veloz
-					</li>
-					<li>
-						Correo electrónico: Estrellavelozjose8118@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Desarrollo Agropecuario</h3>
-				<ul>
-					<li>
-						Titular: Raquel Nava Guzmán
-					</li>
-					<li>
-						Correo electrónico: Desagrojim21-24@outlook.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-46
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Desarrollo económico y social</h3>
-				<ul>
-					<li>
-						Titular: Daniel Cisneros Esparza
-					</li>
-					<li>
-						Correo electrónico: Desarrollosocialjimenez2124@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-46
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Instituto de la mujer</h3>
-				<ul>
-					<li>
-						Titular: Dulce Andrea Téllez
-					</li>
-					<li>
-						Correo electrónico: Victoriarot878@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-46
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Juez comunitario</h3>
-				<ul>
-					<li>
-						Titular: Óscar Herrera Valdez
-					</li>
-					<li>
-						Correo electrónico: oscarherreravaldez@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Obras pública</h3>
-				<ul>
-					<li>
-						Titular: Juan Gurrola Álvarez
-					</li>
-					<li>
-						Correo electrónico: Jimenezdelteul.opublicas21.24@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-46
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Protección civil</h3>
-				<ul>
-					<li>
-						Titular: J. Jesús Campos Cisneros
-					</li>
-					<li>
-						Correo electrónico:
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Registro civil</h3>
-				<ul>
-					<li>
-						Titular: Eidy Angelica de la Cruz Escalante
-					</li>
-					<li>
-						Correo electrónico: eidiangelicadelacruz99@outlook.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Secretaria de gobierno municipal</h3>
-				<ul>
-					<li>
-						Titular: Mtra. María Guadalupe Argumedo Cisneros
-					</li>
-					<li>
-						Correo electrónico: presidenciajimenez1@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Secretario particular</h3>
-				<ul>
-					<li>
-						Titular: Alejandro Piña Pérez
-					</li>
-					<li>
-						Correo electrónico: Alejandroserrano1@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Seguridad pública</h3>
-				<ul>
-					<li>
-						Titular: Manuela Antonia Castañeda
-					</li>
-					<li>
-						Correo electrónico: Antonycastañeda38718@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-95
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Síndico municipal</h3>
-				<ul>
-					<li>
-						Titular: C. José Erasmo Duarte Argumedo
-					</li>
-					<li>
-						Correo electrónico:
-					</li>
-					<li>
-						Teléfono: 457-988-30-45
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Sistema municipal DIF</h3>
-				<ul>
-					<li>
-						Titular: Sandra Miranda Ortega
-					</li>
-					<li>
-						Correo electrónico: Miranda-castillo@live.com.mx
-					</li>
-					<li>
-						Teléfono: 457-988-30-60
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Tesorería</h3>
-				<ul>
-					<li>
-						Titular: Tomás Quintero Sánchez
-					</li>
-					<li>
-						Correo electrónico: jimeneztesoreria@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-31-60
-					</li>
-				</ul>
-				<hr class="border border-dark border-4">
-				<h3>Transparencia</h3>
-				<ul>
-					<li>
-						Titular: Gustavo Pacheco Escobedo
-					</li>
-					<li>
-						Correo electrónico: transparenciajimenezdelteul@gmail.com
-					</li>
-					<li>
-						Teléfono: 457-988-30-46
-					</li>
-				</ul>
+			<!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border border-primary">
+					<h3 class="mt-3">Archivo histórico</h3>
+					<ul>
+						<li>
+							Titular: David Fernández Herrera
+						</li>
+						<li>
+							Correo electrónico:
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			<!-- end row -->
+			</div>
+			<!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Agua potable</h3>
+					<ul>
+						<li>
+							Titular: Arnulfo Sánchez Ibarra
+						</li>
+						<li>
+							Correo electrónico: Profesanchez1418@hotmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			<!-- End row -->
+			</div>
+			<!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Casa de la cultura</h3>
+					<ul>
+						<li>
+							Titular: Jesús Montes Santoyo
+						</li>
+						<li>
+							Correo electrónico: Chuyms21santoyo@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-46
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			<!-- End row -->
+			</div>
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Catastro</h3>
+					<ul>
+						<li>
+							Titular: Claudia Cecilia Hernández González
+						</li>
+						<li>
+							Correo electrónico: Ceci-211185@hotmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-31-60
+						</li>
+					</ul>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Contralor</h3>
+					<ul>
+						<li>
+							Titular: Octavio Herrera Argumedo
+						</li>
+						<li>
+							Correo electrónico: contraloriajimenez@outlook.es
+						</li>
+						<li>
+							Teléfono: 457-988-30-46
+						</li>
+					</ul>
+				</div>
+			</div>				
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Correo</h3>
+					<ul>
+						<li>
+							Titular: Maricela Fernández Hernández
+						</li>
+						<li>
+							Correo electrónico:
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Deportes</h3>
+					<ul>
+						<li>
+							Titular: José Estrella Veloz
+						</li>
+						<li>
+							Correo electrónico: Estrellavelozjose8118@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Desarrollo Agropecuario</h3>
+					<ul>
+						<li>
+							Titular: Raquel Nava Guzmán
+						</li>
+						<li>
+							Correo electrónico: Desagrojim21-24@outlook.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-46
+						</li>
+					</ul>
+				</div>
+			</div>				
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Desarrollo económico y social</h3>
+					<ul>
+						<li>
+							Titular: Daniel Cisneros Esparza
+						</li>
+						<li>
+							Correo electrónico: Desarrollosocialjimenez2124@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-46
+						</li>
+					</ul>
+				</div>
+			</div>				
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Instituto de la mujer</h3>
+					<ul>
+						<li>
+							Titular: Dulce Andrea Téllez
+						</li>
+						<li>
+							Correo electrónico: Victoriarot878@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-46
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Juez comunitario</h3>
+					<ul>
+						<li>
+							Titular: Óscar Herrera Valdez
+						</li>
+						<li>
+							Correo electrónico: oscarherreravaldez@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Obras pública</h3>
+					<ul>
+						<li>
+							Titular: Juan Gurrola Álvarez
+						</li>
+						<li>
+							Correo electrónico: Jimenezdelteul.opublicas21.24@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-46
+						</li>
+					</ul>
+				</div>
+			</div>		
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Protección civil</h3>
+					<ul>
+						<li>
+							Titular: J. Jesús Campos Cisneros
+						</li>
+						<li>
+							Correo electrónico:
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			</div>					
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Registro civil</h3>
+					<ul>
+						<li>
+							Titular: Eidy Angelica de la Cruz Escalante
+						</li>
+						<li>
+							Correo electrónico: eidiangelicadelacruz99@outlook.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			</div>		
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Secretaria de gobierno municipal</h3>
+					<ul>
+						<li>
+							Titular: Mtra. María Guadalupe Argumedo Cisneros
+						</li>
+						<li>
+							Correo electrónico: presidenciajimenez1@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Secretario particular</h3>
+					<ul>
+						<li>
+							Titular: Alejandro Piña Pérez
+						</li>
+						<li>
+							Correo electrónico: Alejandroserrano1@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			</div>		
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Seguridad pública</h3>
+					<ul>
+						<li>
+							Titular: Manuela Antonia Castañeda
+						</li>
+						<li>
+							Correo electrónico: Antonycastañeda38718@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-95
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Síndico municipal</h3>
+					<ul>
+						<li>
+							Titular: C. José Erasmo Duarte Argumedo
+						</li>
+						<li>
+							Correo electrónico:
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Sistema municipal DIF</h3>
+					<ul>
+						<li>
+							Titular: Sandra Miranda Ortega
+						</li>
+						<li>
+							Correo electrónico: Miranda-castillo@live.com.mx
+						</li>
+						<li>
+							Teléfono: 457-988-30-60
+						</li>
+					</ul>
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Tesorería</h3>
+					<ul>
+						<li>
+							Titular: Tomás Quintero Sánchez
+						</li>
+						<li>
+							Correo electrónico: jimeneztesoreria@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-31-60
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Transparencia</h3>
+					<ul>
+						<li>
+							Titular: Gustavo Pacheco Escobedo
+						</li>
+						<li>
+							Correo electrónico: transparenciajimenezdelteul@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-46
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -394,13 +470,13 @@
 	<div class="container">
 		<!-- Start footer -->
 		<footer>
-			<div class="container text-white" style="background-color: #b4262e;">
+			<div class="container text-yellow" style="background-color: #000000;">
 				<!-- Start row -->
 				<div class="row">
 					<!-- Start col -->
 					<div id="imagotipo_positivo_h_ayuntamiento" class="col pt-2 text-center">
-						<a href="../index.html"><img class="navbar-brand img-fluid"
-								src="../data/imagotipo_positivo_h_ayuntamiento.png"
+						<a href="../index.html"><img id="foot-logo" class="navbar-brand img-fluid"
+								src="../data/yellow-logo.png"
 								alt="Imagotipo H. Ayuntamiento de Jiménez del Téul 2021 - 2024"></a>
 					</div>
 					<!-- End col -->
@@ -418,29 +494,27 @@
 					</div>
 					<!-- End col -->
 					<!-- Start col -->
-					<div id="links_interes" class="col-sm text-center">
+					<div id="interest-links" class="col-sm text-center">
 						<h4 class="pt-1">Enlaces de interés</h4>
 						<ul class="list-unstyled">
-							<li><a class="text-white" href="https://gob.mx/">Gobierno de México</a></li>
-							<li><a class="text-white" href="https://www.zacatecas.gob.mx/">Gobierno del estado de Zacatecas</a></li>
-							<li><a class="text-white" href="https://snt.org.mx/">Sistema nacional de transparencia</a></li>
-							<li><a class="text-white" href="https://www.plataformadetransparencia.org.mx/">Portal nacional de transparencia</a></li>
-							<li><a class="text-white" href="../sitemap.html">Mapa del sitio</a></li>
+							<li><a class="text-yellow" href="https://gob.mx/">Gobierno de México</a></li>
+							<li><a class="text-yellow" href="https://www.zacatecas.gob.mx/">Gobierno del estado de Zacatecas</a></li>
+							<li><a class="text-yellow" href="https://snt.org.mx/">Sistema nacional de transparencia</a></li>
+							<li><a class="text-yellow" href="https://www.plataformadetransparencia.org.mx/">Portal nacional de transparencia</a></li>
+							<li><a class="text-yellow" href="../sitemap.html">Mapa del sitio</a></li>
 						</ul>
-						<!--<a id="logo_transparencia" href="https://snt.org.mx/" target="_blank"><img class="img-fluid"
-								src="data/logo_transparencia.png" alt="Logo Sistema Nacional de Transparencia"></a>-->
 					</div>
 					<!-- End col -->
 				</div>
 				<!-- End row -->
 			</div>
-			<div class="container border-top border-dark text-white" style="background-color: #b4262e;">
+			<div class="container border-top border-dark text-yellow" style="background-color: #000000;">
 				<!-- Start row -->
 				<div class="row">
 					<!-- Start col -->
 					<div class="col">
-						<p id="copy_rights" class="text-center p-2">Gobierno Municipal de Jiménez del Téul &copy 2021 -
-							2024</p>
+						<p id="copy_rights" class="text-center p-2">Hecho con cariño ☺️ por el Gobierno Municipal de Jiménez
+							del Téul &copy 2024 - 2027</p>
 					</div>
 					<!-- End col -->
 				</div>
@@ -449,8 +523,8 @@
 		</footer>
 		<!-- End footer -->
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
 </body>
 
