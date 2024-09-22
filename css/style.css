@@ -126,7 +126,8 @@
 	color:black;
 }
 
-#below-nav-logo, 
+#below-nav-logo,
+#head-logo, 
 #foot-logo {
 	width: 200px;
 }
