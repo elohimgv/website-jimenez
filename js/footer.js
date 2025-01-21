@@ -21,7 +21,7 @@ function loadFooter(config) {
 			// Update the color text
 			const links = document.querySelectorAll('#interest-links a');
             links.forEach(link => {
-                link.className = 'text-black'; // Change only the class value
+                link.className = config.fontColor; // Change only the class value
             });
 
 		})
