@@ -107,6 +107,23 @@
 	font-style: italic;
 }
 
+/* Background colors */
+.back-red {
+	background-color: #be3a34;
+}
+
+.back-blue {
+	background-color: #71c5ea;
+}
+
+.back-black {
+	background-color: #000000;
+}
+
+.back-yellow {
+	background-color: #e1cd00;
+}
+
 /* To footer */
 #address_presidencia,
 #copy_rights,
@@ -180,6 +197,7 @@
 	color: white;
 }
 
+/* To Gaceta municipal */
 #newspaper_reading {
 	width: 200px;
 }
