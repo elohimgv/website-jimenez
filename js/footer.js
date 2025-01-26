@@ -8,8 +8,8 @@ function loadFooter(config) {
 			// Personaliza el footer según los parámetros
 			// Modifica las clases del contenedor principal
 			const container = document.querySelector('footer .container');
-			if (config.containerClass) {
-				container.className = `container ${config.containerClass}`;
+			if (config.containerFooter) {
+				container.className = `container ${config.containerFooter}`;
 			}
 
 			// Actualiza el logo
@@ -23,6 +23,15 @@ function loadFooter(config) {
             links.forEach(link => {
                 link.className = config.fontColor; // Change only the class value
             });
+
+			// Selecciona el elemento que contiene las clases especificadas
+			const element = document.querySelector('.container.border-top.border-dark');
+
+			// Verifica si el elemento existe antes de modificarlo
+			if (element) {
+				// Agrega la clase "back-yellow" al elemento
+				element.classList.add(config.fontColor, config.backColorFooter);
+			}
 
 		})
 		.catch(error => console.error('Error al cargar el footer:', error));
