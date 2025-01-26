@@ -2,19 +2,13 @@
 <html lang="es-mx">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
-	<title>Aviso de privacidad - municipio de Jiménez del Téul</title>
-	<link rel="icon" href="../data/favicon.ico" type="image/x-icon" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/style.css">
+	<!-- From /includes/ file -->
+	<div id="head-placeholder"></div>
+	<script src="/js/head.js"></script>
+	<script>
+		loadHead("Aviso de privacidad - Gobierno Municipal de Jiménez del Téul", 
+		"Cómo los servidores públicos del Gobierno Municipal de Jiménez del Téul protegen tus datos personales.");
+	</script>
 </head>
 
 <body class="kanit-light">
@@ -25,7 +19,7 @@
 			<div class="col">
 				<!-- Start Header -->
 				<header>
-					<div class="container text-white p-3" style="background-color: #be3a34;">
+					<div class="container text-white p-3 back-red">
 						<h1 class="display-1 text-center">Aviso de privacidad municipio de Jiménez del Téul</h1>
 					</div>
 				</header>
@@ -37,7 +31,7 @@
 	</div>
 	<div class="container">
 		<!-- Start Navbar -->
-		<nav class="navbar navbar-expand-lg" style="background-color: #71c5ea;">
+		<nav class="navbar navbar-expand-lg back-blue">
 			<div class="container-fluid">
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
 					data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -80,6 +74,10 @@
 									<li>
 										<hr class="dropdown-divider">
 									</li>
+                                    <li><a class="dropdown-item" href="../../gobierno/coordinacion_de_archivos.html">Coordinación de Archivos</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
 									<li><a class="dropdown-item" href="../gobierno/directorio.html">Directorio</a></li>
                                     <li>
 										<hr class="dropdown-divider">
@@ -114,9 +112,9 @@
             </div>
         </div>
     </div>
-	<div class="container">
+	<main class="container">
 		<!-- Start Main content -->
-		<main class="container pt-3">
+		<div class="container pt-3">
 			<p>
                 El H. Ayuntamiento de Jiménez del Téul, con domicilio en calle Morelos No. 22 Centro Jiménez del Téul Zacatecas.,
                 C.P. 99280 TELÉFONO 4579883045, 4579883160 es el responsable del uso y protección de sus datos personales, y
@@ -282,64 +280,22 @@
                 marco jurídico mexicano o a una orden de autoridad competente, se notificará a través del sitio web institucional
                 con diez días hábiles de anticipación a que surta efectos la modificación correspondiente.
             </p>
-            <h2 class="text-center pt-5">He leído y acepto las condicones y política de privacidad descritas en el presente aviso de privacidad</h2>
-		</main>
+            <h2 class="text-center">He leído y acepto las condicones y política de privacidad descritas en el presente aviso de privacidad</h2>
+		</div>
 		<!-- End Main content -->
-	</div>
-	<div class="container pt-5">
+	</main>
+	<div class="container">
 		<!-- Start footer -->
-		<footer>
-			<div class="container" style="background-color: #e1cd00;">
-				<!-- Start row -->
-				<div class="row">
-					<!-- Start col -->
-					<div id="imagotipo_color_h_ayuntamiento" class="col pt-2 text-center">
-						<a href="../index.html"><img id="foot-logo" class="navbar-brand img-fluid"
-								src="../data/negative-logo.png"
-								alt="Imagotipo H. Ayuntamiento de Jiménez del Téul 2024 - 2027"></a>
-					</div>
-					<!-- End col -->
-					<!-- Start col -->
-					<div id="address_presidencia" class="col-sm pt-3 text-center">
-						<ul class="list-unstyled">
-							<li>Presidencia Municipal de Jiménez del Téul</li>
-							<li>Calle Morelos #22</li>
-							<li>Cololonia Centro CP 99280</li>
-							<li>01 (457) 988 30 45</li>
-							<li>01 (457) 988 30 46</li>
-							<li>01 (457) 988 31 60</li>
-							<li>Jiménez del Téul, Zacatecas, Mex.</li>
-						</ul>
-					</div>
-					<!-- End col -->
-					<!-- Start col -->
-					<div id="interest-links" class="col-sm text-center">
-						<h4 class="pt-1">Enlaces de interés</h4>
-						<ul class="list-unstyled">
-							<li><a class="text-black" href="https://gob.mx/">Gobierno de México</a></li>
-							<li><a class="text-black" href="https://www.zacatecas.gob.mx/">Gobierno del estado de Zacatecas</a></li>
-							<li><a class="text-black" href="https://snt.org.mx/">Sistema nacional de transparencia</a></li>
-							<li><a class="text-black" href="https://www.plataformadetransparencia.org.mx/">Portal nacional de transparencia</a></li>
-							<li><a class="text-black" href="../sitemap.html">Mapa del sitio</a></li>
-						</ul>
-					</div>
-					<!-- End col -->
-				</div>
-				<!-- End row -->
-			</div>
-			<div class="container border-top border-dark" style="background-color: #e1cd00;">
-				<!-- Start row -->
-				<div class="row">
-					<!-- Start col -->
-					<div class="col">
-						<p id="copy_rights" class="text-center p-2">Hecho con cariño ☺️ por el Gobierno Municipal de Jiménez
-							del Téul &copy 2024 - 2027</p>
-					</div>
-					<!-- End col -->
-				</div>
-				<!-- End row -->
-			</div>
-		</footer>
+		<div id="footer-placeholder"></div>
+		<script src="/js/footer.js"></script>
+		<script>
+			loadFooter({
+				containerFooter: "back-yellow",
+				logoSrc: "../../data/negative-logo.png",
+                fontColor: "text-black",
+                backColorFooter: "back-yellow"	
+			});
+		</script>
 		<!-- End footer -->
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
