@@ -1,4 +1,4 @@
-function loadHead(title, description) {
+function loadHead(title, path, description) {
     // Request to load the head.html file
     fetch('../includes/head.html')
         .then(response => response.text())
@@ -8,6 +8,10 @@ function loadHead(title, description) {
 
             // Change dynamically the tag <title>
             document.title = title;
+            // Add favicon path
+            let linkPathFavicon = document.querySelector('link[rel="icon"]');
+            linkPathFavicon.href = path + 'favicon.ico';
+            
 
             // Add or update the meta description
             let metaDescription = document.querySelector('meta[name="description"]');
