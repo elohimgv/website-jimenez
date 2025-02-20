@@ -21,14 +21,3 @@ function loadHead(title, description) {
         })
         .catch(error => console.error('Error al cargar el head:', error));
 }
-
-function loadFooter() {
-    // Request to load the footer.html file
-    fetch('../includes/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            // Insert the content of the footer file on the placeholder
-            document.getElementById('footer-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar el footer:', error));
-}
