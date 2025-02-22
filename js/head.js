@@ -1,6 +1,12 @@
-function loadHead(title, description) {
+function loadHead(title, pathToFavicon, description) {
+    let pathToHeadFile;
+    if (pathToFavicon === "../data/") {
+        pathToHeadFile = '../includes/head.html';
+    } else {
+        pathToHeadFile = '../../includes/head.html';
+    }
     // Request to load the head.html file
-    fetch('../includes/head.html')
+    fetch(pathToHeadFile)
         .then(response => response.text())
         .then(data => {
             // Insert the content of the head file on the placeholder
@@ -8,6 +14,10 @@ function loadHead(title, description) {
 
             // Change dynamically the tag <title>
             document.title = title;
+            // Add favicon path
+            let linkPathFavicon = document.querySelector('link[rel="icon"]');
+            linkPathFavicon.href = pathToFavicon + 'favicon.ico';
+            
 
             // Add or update the meta description
             let metaDescription = document.querySelector('meta[name="description"]');
@@ -20,15 +30,4 @@ function loadHead(title, description) {
             metaDescription.content = description; // Establish the dynamic content
         })
         .catch(error => console.error('Error al cargar el head:', error));
-}
-
-function loadFooter() {
-    // Request to load the footer.html file
-    fetch('../includes/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            // Insert the content of the footer file on the placeholder
-            document.getElementById('footer-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error al cargar el footer:', error));
 }

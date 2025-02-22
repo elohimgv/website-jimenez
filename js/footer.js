@@ -1,5 +1,12 @@
 function loadFooter(config) {
-	fetch('../includes/footer.html')
+	let pathToFooterFile;
+	let subString = config.logoSrc.indexOf(".", 2);
+    if (subString === 1) {
+        pathToFooterFile = '../includes/footer.html';
+    } else {
+        pathToFooterFile = '../../includes/footer.html';
+    }
+	fetch(pathToFooterFile)
 		.then(response => response.text())
 		.then(data => {
 			// Inserta el contenido base del footer
