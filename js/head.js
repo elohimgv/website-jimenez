@@ -1,6 +1,12 @@
-function loadHead(title, path, description) {
+function loadHead(title, pathToFavicon, description) {
+    let pathToHeadFile;
+    if (pathToFavicon === "../data/") {
+        pathToHeadFile = '../includes/head.html';
+    } else {
+        pathToHeadFile = '../../includes/head.html';
+    }
     // Request to load the head.html file
-    fetch('../includes/head.html')
+    fetch(pathToHeadFile)
         .then(response => response.text())
         .then(data => {
             // Insert the content of the head file on the placeholder
@@ -10,7 +16,7 @@ function loadHead(title, path, description) {
             document.title = title;
             // Add favicon path
             let linkPathFavicon = document.querySelector('link[rel="icon"]');
-            linkPathFavicon.href = path + 'favicon.ico';
+            linkPathFavicon.href = pathToFavicon + 'favicon.ico';
             
 
             // Add or update the meta description
