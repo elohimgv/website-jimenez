@@ -8,7 +8,7 @@ const ID_FOR_EACH_OFFICE = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 let yearsArr = [
   '#_2020A', // Be carful with this line, isn't allow
-  '#_2021A', '#_2022A', '#_2023A', '#_2024A',
+  '#_2021A', '#_2022A', '#_2023A', '#_2024A', '_2025A',
   '#_2021B', '#_2022B', '#_2023B', '#_2024B',
   '#_2021C', '#_2022C', '#_2023C', '#_2024C',
   '#el_aA', '#el_bA', '#el_cA', '#el_dA', '#el_eA', '#el_fA', // remanent to do something; finanzas.
@@ -21,7 +21,7 @@ let yearsArr = [
 
 let dataYearsArr = [
   '#data2020A', // Be carful with this line, isn't allow
-  '#data2021A', '#data2022A', '#data2023A', '#data2024A',
+  '#data2021A', '#data2022A', '#data2023A', '#data2024A', '#data2025A',
   '#data2021B', '#data2022B', '#data2023B', '#data2024B',
   '#data2021C', '#data2022C', '#data2023C', '#data2024C',
   '#dataaA', '#databA', '#datacA', '#datadA', '#dataeA', '#datafA', // remanent to do something; finanzas.
@@ -34,7 +34,7 @@ let dataYearsArr = [
 
 let activeUnderlineArr = [ 
   '#inactive2020A', // Be careful with this line, isn't allow
-  '#inactive2021A', '#inactive2022A', '#inactive2023A', '#inactive2024A',
+  '#inactive2021A', '#inactive2022A', '#inactive2023A', '#inactive2024A', '#inactive2025A',
   '#inactive2021B', '#inactive2022B', '#inactive2023B', '#inactive2024B',
   '#inactive2021C', '#inactive2022C', '#inactive2023C', '#inactive2024C',
   '#inactive_aA', '#inactive_bA', '#inactive_cA', '#inactive_dA', '#inactive_eA', '#inactive_fA', // remanent to do something; finanzas.
