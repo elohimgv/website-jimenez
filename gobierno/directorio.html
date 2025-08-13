@@ -26,76 +26,25 @@
 	</header>
 	<div class="container">
 		<!-- Start Navbar -->
-		<nav class="navbar navbar-expand-lg back-blue">
-			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-					<!-- Burguer icon -->
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel">
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Gobierno de Jiménez del Téul</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
-					<!-- Activate with a responsive behaviour -->
-					<div class="offcanvas-body">
-						<ul class="navbar-nav flex-grow-1 pe-1">
-							<li class="nav-item">
-								<a class="text-black nav-link" href="../index.html">Inicio</a>
-							</li>
-							<li class="nav-item">
-								<!-- Start Dropdwon toggle -->
-								<a class="text-black nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-									aria-expanded="false">Gobierno</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="presidente.html">Presidente
-											municipal</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="organigrama.html">Organigrama</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="gaceta.html">Gaceta municipal</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="https://websitejimenez.s3.us-east-2.amazonaws.com/tabulador_de_sueldos.pdf" target="_blank">Tabulador de sueldos</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="../../gobierno/coordinacion_de_archivos.html">Coordinación de Archivos</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="directorio.html">Directorio</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="../gobierno/aviso_de_privacidad.html">Aviso de privacidad</a></li>
-								</ul>
-							</li>
-							<!-- End Dropdwon toggle -->
-							<li class="nav-item">
-								<a class="text-black nav-link" href="../municipio.html">Municipio</a>
-							</li>
-							<li class="nav-item">
-								<a class="text-black nav-link" href="/transparencia/transparencia.html">Transparencia</a>
-							</li>
-							<li class="nav-item">
-								<a class="text-black nav-link" href="/finanzas/finanzas.html">Finanzas</a>
-							</li>
-							<li class="nav-item">
-								<a class="text-black nav-link" href="../contacto.html">Contacto</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
+		<!--From includes file-->
+		<div id="nav-placeholder"></div>
+		<script src="/js/nav.js"></script>
+		<script>
+			const links = {
+				href_index: "../index.html",
+				href_presidente: "presidente.html",
+				href_organigrama: "organigrama.html",
+				href_gacetaMunicipal: "gaceta.html",
+				href_coordinacionArchivos: "../../gobierno/coordinacion_de_archivos.html",
+				href_directorio: "directorio.html",
+				href_avisoPrivacidad: "../gobierno/aviso_de_privacidad.html",
+				href_municipio: "../municipio.html",
+				href_transparencia: "/transparencia/transparencia.html",
+				href_finanzas: "/finanzas/finanzas.html",
+				href_contacto: "../contacto.html"
+			}
+			loadNav(links);
+		</script>
 		<!-- End Navbar -->
 	</div>
 	<!-- Start main content -->
@@ -105,12 +54,220 @@
 				<div class="col mt-3 text-white">
 					<h1>Directorio Municipal</h1>
 					<p>
-						Cada departamento cumple su función conforme a lo establecido en la <a id="ley_organica" href="#" target="_blank">Ley Orgánica del Municipio</a>. 
+						Cada Unidad Administrativa cumple su función conforme a lo establecido en la <a id="ley_organica" href="#" target="_blank">Ley Orgánica del Municipio</a>. 
 						Conoce al encargado de cada departamento y las opciones de contacto. Estamos para resolver tus 
 						dudas y quejas. Acercate y conócenos.
 					</p>
 				</div>
 			</div>
+			<h1>Gobierno Municipal</h1>
+			<!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-top border-bottom border-start border-primary">
+					<h3>Presidente Municipal</h3>
+					<ul>
+						<li>
+							Prof. Daniel Cisneros Esparza
+						</li>
+						<li>
+							Comisión: Gobernancia y Vigilancia
+						</li>
+						<li>
+							Correo electrónico: presidenciajimenez1@gmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-45
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
+			<!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Síndica Municipal</h3>
+					<ul>
+						<li>
+							C. María Piña Acevedo
+						</li>
+						<li>
+							Comisión: Hacienda y Vigilancia
+						</li>
+						<li>
+							Correo electrónico: Mary-0809970@hotmail.com
+						</li>
+						<li>
+							Teléfono: 457-988-30-45 
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
+			<!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Regidora</h3>
+					<ul>
+						<li>
+							C. Irma Rodarte Sánchez
+						</li>
+						<li>
+							Comisión: Igualdad de Género y Salud
+						</li>
+						<li>
+							Correo electrónico: 
+						</li>
+						<li>
+							Teléfono:4331037278
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
+			<!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Regidora</h3>
+					<ul>
+						<li>
+							C. Diana Laura Rosales Chávez
+						</li>
+						<li>
+							Comisión: Educación y Derechos Humanos
+						</li>
+						<li>
+							Correo electrónico: d.rosalesjim15@gmail.com
+						</li>
+						<li>
+							Teléfono:
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
+			<!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Regidor</h3>
+					<ul>
+						<li>
+							C. Ángel Brayan Rodríguez Campos
+						</li>
+						<li>
+							Comisión: Cultura
+						</li>
+						<li>
+							Correo electrónico: rodriguezangelbrayan8@gmail.com 
+						</li>
+						<li>
+							Teléfono: 6677360725
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
+			 <!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Regidora</h3>
+					<ul>
+						<li>
+							C. Joana Cristian Torres Gallegos
+						</li>
+						<li>
+							Comisión: Agua, Medio Ambiente y Sustentabilidad y Desarrollo Económico y Social
+						</li>
+						<li>
+							Correo electrónico: jctg010524@gmail.com
+						</li>
+						<li>
+							Teléfono:
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
+			 <!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Regidor</h3>
+					<ul>
+						<li>
+							C. Vicente Chávez Hernández
+						</li>
+						<li>
+							Comisión: Obras y Servicios Públicos
+						</li>
+						<li>
+							Correo electrónico: vicentechavez055@gmail.com
+						</li>
+						<li>
+							Teléfono: 4581156859
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
+			 <!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Regidora</h3>
+					<ul>
+						<li>
+							Profa. Maricela Herrera Vázquez
+						</li>
+						<li>
+							Comisión: Protección Civil
+						</li>
+						<li>
+							Correo electrónico: 
+						</li>
+						<li>
+							Teléfono:
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
+			 <!-- Start row -->
+			<div class="row">
+				<!-- Start col -->
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Regidor</h3>
+					<ul>
+						<li>
+							C. Ramiro Aguirre Cisneros
+						</li>
+						<li>
+							Comisión: Desarrollo Rural y Sustentable
+						</li>
+						<li>
+							Correo electrónico: ramiroaguirre440@gmail.com
+						</li>
+						<li>
+							Teléfono: 6751292676
+						</li>
+					</ul>
+				<!-- End col -->
+				</div>
+			</div>
+			<!-- End row -->
 			<!-- Start row -->
 			<div class="row">
 				<!-- Start col -->
@@ -129,13 +286,13 @@
 					</ul>
 				<!-- End col -->
 				</div>
-			<!-- End row -->
 			</div>
+			<!-- End row -->
 			<!-- Start row -->
 			<div class="row">
 				<!-- Start col -->
 				<div class="col border-end border-bottom border-start border-primary">
-					<h3>Casa de la cultura</h3>
+					<h3>Cultura</h3>
 					<ul>
 						<li>
 							Titular: C. Cristian Flores Cisneros
@@ -169,7 +326,7 @@
 			</div>	
 			<div class="row">
 				<div class="col border-end border-bottom border-start border-primary">
-					<h3>Contralor</h3>
+					<h3>Órgano Interno de Control</h3>
 					<ul>
 						<li>
 							Titular: C. Navor Vázquez Cisneros
@@ -287,7 +444,7 @@
 					<h3>Juez Comunitario</h3>
 					<ul>
 						<li>
-							Titular: POR DEFINIR
+							Titular: Lic. José Alonso Fernández Hernández
 						</li>
 						<li>
 							Correo electrónico: POR DEFINIR
@@ -300,7 +457,7 @@
 			</div>
 			<div class="row">
 				<div class="col border-end border-bottom border-start border-primary">
-					<h3>Obras Públicas</h3>
+					<h3>Obras y Servicios Públicos</h3>
 					<ul>
 						<li>
 							Titular: C. Illiana Nayeli Herrera Muro
@@ -319,7 +476,7 @@
 					<h3>Protección Civil</h3>
 					<ul>
 						<li>
-							Titular: POR DEFINIR
+							Titular: C. Octavio Herrera Argumedo
 						</li>
 						<li>
 							Correo electrónico:
@@ -396,22 +553,6 @@
 			</div>
 			<div class="row">
 				<div class="col border-end border-bottom border-start border-primary">
-					<h3>Síndico Municipal</h3>
-					<ul>
-						<li>
-							Titular: C. María Piña Acevedo
-						</li>
-						<li>
-							Correo electrónico: mary-080970@hotmail.com
-						</li>
-						<li>
-							Teléfono: 457-988-30-45
-						</li>
-					</ul>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col border-end border-bottom border-start border-primary">
 					<h3>Sistema DIF Municipal</h3>
 					<ul>
 						<li>
@@ -460,13 +601,29 @@
 			</div>
 			<div class="row">
 				<div class="col border-end border-bottom border-start border-primary">
-					<h3>Turismo</h3>
+					<h3>Instituto del Migrante</h3>
 					<ul>
 						<li>
-							Titular: C. Johali Lizbeth Hernández Ávila
+							Titular: C. Lizbeth Esmeralda Hernández Santoyo
 						</li>
 						<li>
-							Correo electrónico: turismojimenez2024@gmail.com
+							Correo electrónico: 
+						</li>
+						<li>
+							Teléfono: 457-988-30-46
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col border-end border-bottom border-start border-primary">
+					<h3>Unidad de Planeación</h3>
+					<ul>
+						<li>
+							Titular: C. Isaul Sánchez Escamilla
+						</li>
+						<li>
+							Correo electrónico: 
 						</li>
 						<li>
 							Teléfono: 457-988-30-46
