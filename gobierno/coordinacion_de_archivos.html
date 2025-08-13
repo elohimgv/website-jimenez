@@ -27,79 +27,25 @@
 	<!-- End Header -->
 	<div class="container">
 		<!-- Start Navbar -->
-		<nav class="navbar navbar-expand-lg back-blue">
-			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-					<!-- Burguer icon -->
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel">
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Gobierno de Jiménez del Téul</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
-					<!-- Activate with a responsive behaviour -->
-					<div class="offcanvas-body">
-						<ul class="navbar-nav flex-grow-2 pe-1">
-							<li class="nav-item">
-								<a class="text-black nav-link" href="../../index.html">Inicio</a>
-							</li>
-							<li class="nav-item">
-								<!-- Start Dropdwon toggle -->
-								<a class="text-black nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-									aria-expanded="false">Gobierno</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item"
-											href="../../gobierno/presidente.html">Presidente municipal</a>
-									</li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="../../gobierno/organigrama.html">Organigrama</a>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-                                    <li><a class="dropdown-item" href="gaceta.html">Gaceta municipal</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="https://websitejimenez.s3.us-east-2.amazonaws.com/tabulador_de_sueldos.pdf" target="_blank">Tabulador de sueldos</a></li>
-									</li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="../../gobierno/coordinacion_de_archivos.html">Coordinación de Archivos</a></li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="../../gobierno/directorio.html">Directorio</a>
-									</li>
-									<li>
-										<hr class="dropdown-divider">
-									</li>
-									<li><a class="dropdown-item" href="../../gobierno/aviso_de_privacidad.html">Aviso de privacidad</a></li>
-								</ul>
-							</li>
-							<!-- End Dropdwon toggle -->
-							<li class="nav-item">
-								<a class="text-black nav-link" href="../../municipio.html">Municipio</a>
-							</li>
-							<li class="nav-item">
-								<a class="text-black nav-link" href="../../transparencia/transparencia.html">Transparencia</a>
-							</li>
-							<li class="nav-item">
-								<a class="text-black nav-link" href="../../finanzas/finanzas.html">Finanzas</a>
-							</li>
-							<li class="nav-item">
-								<a class="text-black nav-link" href="../../contacto.html">Contacto</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
+		<!--From includes file-->
+		<div id="nav-placeholder"></div>
+		<script src="/js/nav.js"></script>
+		<script>
+			const links = {
+				href_index: "../index.html",
+				href_presidente: "presidente.html",
+				href_organigrama: "organigrama.html",
+				href_gacetaMunicipal: "gaceta.html",
+				href_coordinacionArchivos: "../../gobierno/coordinacion_de_archivos.html",
+				href_directorio: "directorio.html",
+				href_avisoPrivacidad: "../gobierno/aviso_de_privacidad.html",
+				href_municipio: "../municipio.html",
+				href_transparencia: "/transparencia/transparencia.html",
+				href_finanzas: "/finanzas/finanzas.html",
+				href_contacto: "../contacto.html"
+			}
+			loadNav(links);
+		</script>
 		<!-- End Navbar -->
 	</div>
 	<!-- Start main -->
