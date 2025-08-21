@@ -1,33 +1,49 @@
-function loadHead(title, pathToFavicon, description) {
+/**
+ * Carga dinámicamente el <head> de la página
+ * @param {string} title       - Título de la página
+ * @param {string} path        - Ruta base donde está el favicon u otros assets
+ * @param {string} description - Descripción de la página
+ */
+function loadHead(title, path, description) {
     let pathToHeadFile;
-    if (pathToFavicon === "../data/") {
-        pathToHeadFile = '../includes/head.html';
+
+    // Ajusta la ruta dependiendo de dónde estés
+    if (path === "../data/") {
+        pathToHeadFile = "../includes/head.html";
     } else {
-        pathToHeadFile = '../../includes/head.html';
+        pathToHeadFile = "../../includes/head.html";
     }
-    // Request to load the head.html file
+
+    // Cargar el archivo head.html
     fetch(pathToHeadFile)
         .then(response => response.text())
         .then(data => {
-            // Insert the content of the head file on the placeholder
-            document.getElementById('head-placeholder').innerHTML = data;
+            // Inyectar el head en el placeholder
+            document.getElementById("head-placeholder").innerHTML = data;
 
-            // Change dynamically the tag <title>
+            // ---- Ajustes dinámicos ----
+
+            // Título
             document.title = title;
-            // Add favicon path
-            let linkPathFavicon = document.querySelector('link[rel="icon"]');
-            linkPathFavicon.href = pathToFavicon + 'favicon.ico';
-            
 
-            // Add or update the meta description
-            let metaDescription = document.querySelector('meta[name="description"]');
+            // Descripción
+            let metaDescription = document.querySelector("meta[name='description']");
             if (!metaDescription) {
-                // If there isn't a meta description, it creates
-                metaDescription = document.createElement('meta');
-                metaDescription.name = 'description';
+                metaDescription = document.createElement("meta");
+                metaDescription.name = "description";
                 document.head.appendChild(metaDescription);
             }
-            metaDescription.content = description; // Establish the dynamic content
+            metaDescription.content = description;
+
+            // Favicon
+            let favicon = document.querySelector("link[rel='icon']");
+            if (!favicon) {
+                favicon = document.createElement("link");
+                favicon.rel = "icon";
+                document.head.appendChild(favicon);
+            }
+            favicon.href = path + "favicon.ico";
         })
-        .catch(error => console.error('Error al cargar el head:', error));
+        .catch(error => console.error("Error al cargar el head:", error));
 }
+
