@@ -1,45 +1,40 @@
 function loadFooter(config) {
-	let pathToFooterFile;
-	let subString = config.logoSrc.indexOf(".", 2);
-    if (subString === 1) {
-        pathToFooterFile = '../includes/footer.html';
-    } else {
+    // Detecta si estamos en subcarpeta (../ o ../../)
+    let pathToFooterFile;
+    if (window.location.pathname.split("/").length > 2) {
         pathToFooterFile = '../../includes/footer.html';
+    } else {
+        pathToFooterFile = '../includes/footer.html';
     }
-	fetch(pathToFooterFile)
-		.then(response => response.text())
-		.then(data => {
-			// Inserta el contenido base del footer
-			document.getElementById('footer-placeholder').innerHTML = data;
 
-			// Personaliza el footer según los parámetros
-			// Modifica las clases del contenedor principal
-			const container = document.querySelector('footer .container');
-			if (config.containerFooter) {
-				container.className = `container ${config.containerFooter}`;
-			}
+    fetch(pathToFooterFile)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
 
-			// Actualiza el logo
-			const logo = document.getElementById('foot-logo');
-			if (logo) {
-				logo.src = config.logoSrc || logo.src;
-			}
+            // Cambia contenedor
+            const container = document.querySelector('footer .container');
+            if (config.containerFooter) {
+                container.className = `container ${config.containerFooter}`;
+            }
 
-			// Update the color text
-			const links = document.querySelectorAll('#interest-links a');
+            // Actualiza logo
+            const logo = document.getElementById('foot-logo');
+            if (logo) {
+                logo.src = config.logoSrc || logo.src;
+            }
+
+            // Cambia color de links
+            const links = document.querySelectorAll('#interest-links a');
             links.forEach(link => {
-                link.className = config.fontColor; // Change only the class value
+                link.className = config.fontColor;
             });
 
-			// Selecciona el elemento que contiene las clases especificadas
-			const element = document.querySelector('.container.border-top.border-dark');
-
-			// Verifica si el elemento existe antes de modificarlo
-			if (element) {
-				// Agrega la clase "back-yellow" al elemento
-				element.classList.add(config.fontColor, config.backColorFooter);
-			}
-
-		})
-		.catch(error => console.error('Error al cargar el footer:', error));
+            // Fondo + color general
+            const element = document.querySelector('footer');
+            if (element) {
+                element.classList.add(config.fontColor, config.backColorFooter);
+            }
+        })
+        .catch(error => console.error('Error al cargar el footer:', error));
 }

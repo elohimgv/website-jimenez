@@ -1,46 +1,102 @@
-function loadNav(links) {
-    let pathToNavFile;
-    pathToNavFile = '../../includes/nav.html';
-    // Request to load the nav.html file
-    fetch(pathToNavFile)
-        .then(response => response.text())
-        .then(data => {
-            // Insert content of the nav file on the placeholder
-            document.getElementById('nav-placeholder').innerHTML = data;
+// Mapa centralizado de rutas
+const navLinks = {
+  // ----------------------------
+  // Nivel 0 (raíz) → /index.html
+  // ----------------------------
+  accessFile1: {
+    link_index: "index.html",
+    link_presidente: "gobierno/presidente.html",
+    link_organigrama: "gobierno/organigrama.html",
+    link_gaceta: "gobierno/gaceta.html",
+    link_coordinacion: "gobierno/coordinacion_de_archivos.html",
+    link_directorio: "gobierno/directorio.html",
+    link_aviso: "gobierno/aviso_de_privacidad.html",
+    link_municipio: "municipio.html",
+    link_transparencia: "transparencia/transparencia.html",
+    link_finanzas: "finanzas/finanzas.html",
+    link_contacto: "contacto.html"
+  },
+  // ----------------------------
+  // Nivel 1 → /transparencia/transparencia.html
+  // ----------------------------
+  accessFile2: {
+    link_index: "../index.html",
+    link_presidente: "../gobierno/presidente.html",
+    link_organigrama: "../gobierno/organigrama.html",
+    link_gaceta: "../gobierno/gaceta.html",
+    link_coordinacion: "../gobierno/coordinacion_de_archivos.html",
+    link_directorio: "../gobierno/directorio.html",
+    link_aviso: "../gobierno/aviso_de_privacidad.html",
+    link_municipio: "../municipio.html",
+    link_transparencia: "/transparencia/transparencia.html",
+    link_finanzas: "/finanzas/finanzas.html",
+    link_contacto: "../contacto.html"
+  },
+  // ----------------------------
+  // Nivel 2 → /transparencia/a39/f1.html
+  // ----------------------------
+  accessFile3: {
+    link_index: "../../index.html",
+    link_presidente: "../../gobierno/presidente.html",
+    link_organigrama: "../../gobierno/organigrama.html",
+    link_gaceta: "../../gobierno/gaceta.html",
+    link_coordinacion: "../../gobierno/coordinacion_de_archivos.html",
+    link_directorio: "../../gobierno/directorio.html",
+    link_aviso: "../../gobierno/aviso_de_privacidad.html",
+    link_municipio: "../../municipio.html",
+    link_transparencia: "../../transparencia/transparencia.html",
+    link_finanzas: "../../finanzas/finanzas.html",               
+    link_contacto: "../../contacto.html"
+  },
+  // ----------------------------
+  // Nivel 3 o más → ej. /x/y/z/archivo.html
+  // ----------------------------
+  accessFile4: {
+    link_index: "../../../index.html",
+    link_presidente: "../../../gobierno/presidente.html",
+    link_organigrama: "../../../gobierno/organigrama.html",
+    link_gaceta: "../../../gobierno/gaceta.html",
+    link_coordinacion: "../../../gobierno/coordinacion_de_archivos.html",
+    link_directorio: "../../../gobierno/directorio.html",
+    link_aviso: "../../../gobierno/aviso_de_privacidad.html",
+    link_municipio: "../../../municipio.html",
+    link_transparencia: "../../../transparencia/transparencia.html",
+    link_finanzas: "../../../finanzas/finanzas.html",
+    link_contacto: "../../../contacto.html"
+  }
+};
 
-            // Change dynamically the links
-            let linkPathIndex = document.getElementById('index');
-            linkPathIndex.href = links.href_index;
-           
-            let linkPathPresidente = document.getElementById('presidente');
-            linkPathPresidente.href = links.href_presidente;
+// Función para determinar automáticamente el nivel de carpeta
+function detectAccessFile() {
+  const path = window.location.pathname; // ej: /gobierno/presidente.html
+  const depth = path.split("/").length - 2; 
+  // -2 porque el split cuenta la cadena vacía inicial y el archivo final
 
-            let linkPathOrganigrama = document.getElementById('org');
-            linkPathOrganigrama.href = links.href_organigrama;
+  if (depth === 0) return "accessFile1";
+  if (depth === 1) return "accessFile2";
+  if (depth === 2) return "accessFile3";
+  return "accessFile4"; // por defecto, cualquier nivel mayor
+}
 
-            let linkPathGaceta = document.getElementById('gaceta');
-            linkPathGaceta.href = links.href_gacetaMunicipal;
+// Función para cargar el nav dinámicamente
+function loadNavAuto() {
+  const accessKey = detectAccessFile();
+  const access = navLinks[accessKey];
 
-            let linkPathCoordinacionArchivos = document.getElementById('coordinacion');
-            linkPathCoordinacionArchivos.href = links.href_coordinacionArchivos;
+  if (!access) {
+    console.error("Clave de acceso inválida:", accessKey);
+    return;
+  }
 
-            let linkPathDirectorio = document.getElementById('directorio');
-            linkPathDirectorio.href = links.href_directorio;
+  fetch("../../includes/nav.html") // Falta ajustar la ruta automáticamente
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
 
-            let linkPathAvisoPrivacidad = document.getElementById('aviso');
-            linkPathAvisoPrivacidad.href = links.href_avisoPrivacidad;
-
-            let linkPathMunicipio = document.getElementById('municipio');
-            linkPathMunicipio.href = links.href_municipio;
-
-            let linkPathTransparencia = document.getElementById('transparencia');
-            linkPathTransparencia.href = links.href_transparencia;
-
-            let linkPathFinanzas = document.getElementById('finanzas');
-            linkPathFinanzas.href = links.href_finanzas;
-
-             let linkPathContacto = document.getElementById('contacto');
-            linkPathContacto.href = links.href_contacto;
-        })
-        .catch(error => console.error('Error al cargar la navbar:', error));
-    }
+      Object.entries(access).forEach(([id, href]) => {
+        const link = document.getElementById(id);
+        if (link) link.href = href;
+      });
+    })
+    .catch(error => console.error("Error al cargar la navbar:", error));
+}
