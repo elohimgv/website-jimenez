@@ -11,7 +11,8 @@ const navLinks = {
     link_coordinacion: "gobierno/coordinacion_de_archivos.html",
     link_directorio: "gobierno/directorio.html",
     link_aviso: "gobierno/aviso_de_privacidad.html",
-    link_municipio: "municipio.html",
+    link_monografia: "municipio/monografia.html",
+    link_presidentes: "municipio/presidentes.html",
     link_transparencia: "transparencia/transparencia.html",
     link_finanzas: "finanzas/finanzas.html",
     link_contacto: "contacto.html"
@@ -27,7 +28,8 @@ const navLinks = {
     link_coordinacion: "../gobierno/coordinacion_de_archivos.html",
     link_directorio: "../gobierno/directorio.html",
     link_aviso: "../gobierno/aviso_de_privacidad.html",
-    link_municipio: "../municipio.html",
+    link_monografia: "../municipio/monografia.html",
+    link_presidentes: "../municipio/presidentes.html",
     link_transparencia: "/transparencia/transparencia.html",
     link_finanzas: "/finanzas/finanzas.html",
     link_contacto: "../contacto.html"
@@ -43,7 +45,8 @@ const navLinks = {
     link_coordinacion: "../../gobierno/coordinacion_de_archivos.html",
     link_directorio: "../../gobierno/directorio.html",
     link_aviso: "../../gobierno/aviso_de_privacidad.html",
-    link_municipio: "../../municipio.html",
+    link_monografia: "../../municipio/monografia.html",
+    link_presidentes: "../../municipio/presidentes.html",
     link_transparencia: "../../transparencia/transparencia.html",
     link_finanzas: "../../finanzas/finanzas.html",               
     link_contacto: "../../contacto.html"
@@ -59,7 +62,8 @@ const navLinks = {
     link_coordinacion: "../../../gobierno/coordinacion_de_archivos.html",
     link_directorio: "../../../gobierno/directorio.html",
     link_aviso: "../../../gobierno/aviso_de_privacidad.html",
-    link_municipio: "../../../municipio.html",
+    link_monografia: "../../../municipio/monografia.html",
+    link_presidentes: "../../../municipio/presidentes.html",
     link_transparencia: "../../../transparencia/transparencia.html",
     link_finanzas: "../../../finanzas/finanzas.html",
     link_contacto: "../../../contacto.html"
