@@ -4,19 +4,21 @@
 // and C = 3. It represent the position of the
 // office. Not all fraction has explicity
 // the office name; sometimes just the years. 
-const ID_FOR_EACH_OFFICE = ['A', 'B', 'C', 'D', 'E', 'F']; 
+const ID_FOR_EACH_OFFICE = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; 
 
 let yearsArr = [
   '#_2020A', // Be carful with this line, isn't allow
-  '#_2021A', '#_2022A', '#_2023A', '#_2024A', '_2025A',
+  '#_2021A', '#_2022A', '#_2023A', '#_2024A', '#_2025A',
   '#_2021B', '#_2022B', '#_2023B', '#_2024B',
   '#_2021C', '#_2022C', '#_2023C', '#_2024C',
-  '#el_aA', '#el_bA', '#el_cA', '#el_dA', '#el_eA', '#el_fA', // remanent to do something; finanzas.
+  '#el_aA', '#el_bA', '#el_cA', '#el_dA', '#el_eA', '#el_fA', '#el_gA', '#el_hA', '#el_iA', '#el_jA', '#el_kA', '#el_lA', '#el_mA', '#el_nA', '#el_oA',
+  // remanent to do something; finanzas.
   '#el_aB', '#el_bB', '#el_cB', '#el_dB', '#el_eB', '#el_fB',
   '#el_aC', '#el_bC', '#el_cC', '#el_dC', '#el_eC', '#el_fC',
   '#el_aD', '#el_bD', '#el_cD', '#el_dD', '#el_eD', '#el_fD',
   '#el_aE', '#el_bE', '#el_cE', '#el_dE', '#el_eE', '#el_fE',
-  '#el_aF', '#el_bF', '#el_cF', '#el_dF', '#el_eF', '#el_fF'
+  '#el_aF', '#el_bF', '#el_cF', '#el_dF', '#el_eF', '#el_fF',
+  '#el_aG', '#el_bG', '#el_cG', '#el_dG', '#el_eG', '#el_fG'
 ];
 
 let dataYearsArr = [
@@ -24,12 +26,14 @@ let dataYearsArr = [
   '#data2021A', '#data2022A', '#data2023A', '#data2024A', '#data2025A',
   '#data2021B', '#data2022B', '#data2023B', '#data2024B',
   '#data2021C', '#data2022C', '#data2023C', '#data2024C',
-  '#dataaA', '#databA', '#datacA', '#datadA', '#dataeA', '#datafA', // remanent to do something; finanzas.
+  '#dataaA', '#databA', '#datacA', '#datadA', '#dataeA', '#datafA', '#datagA', '#datahA', '#dataiA', '#datajA', '#datakA', '#datalA', '#datamA', '#datanA', '#dataoA',
+  // remanent to do something; finanzas.
   '#dataaB', '#databB', '#datacB', '#datadB', '#dataeB', '#datafB',
   '#dataaC', '#databC', '#datacC', '#datadC', '#dataeC', '#datafC',
   '#dataaD', '#databD', '#datacD', '#datadD', '#dataeD', '#datafD',
   '#dataaE', '#databE', '#datacE', '#datadE', '#dataeE', '#datafE',
-  '#dataaF', '#databF', '#datacF', '#datadF', '#dataeF', '#datafF'
+  '#dataaF', '#databF', '#datacF', '#datadF', '#dataeF', '#datafF',
+  '#dataaG', '#databG', '#datacG', '#datadG', '#dataeG', '#datafG'
 ];
 
 let activeUnderlineArr = [ 
@@ -37,12 +41,14 @@ let activeUnderlineArr = [
   '#inactive2021A', '#inactive2022A', '#inactive2023A', '#inactive2024A', '#inactive2025A',
   '#inactive2021B', '#inactive2022B', '#inactive2023B', '#inactive2024B',
   '#inactive2021C', '#inactive2022C', '#inactive2023C', '#inactive2024C',
-  '#inactive_aA', '#inactive_bA', '#inactive_cA', '#inactive_dA', '#inactive_eA', '#inactive_fA', // remanent to do something; finanzas.
+  '#inactive_aA', '#inactive_bA', '#inactive_cA', '#inactive_dA', '#inactive_eA', '#inactive_fA', '#inactive_gA', '#inactive_hA', '#inactive_iA', '#inactive_jA', '#inactive_kA', '#inactive_lA', '#inactive_mA', '#inactive_nA', '#inactive_oA',
+  // remanent to do something; finanzas.
   '#inactive_aB', '#inactive_bB', '#inactive_cB', '#inactive_dB', '#inactive_eB', '#inactive_fB',
   '#inactive_aC', '#inactive_bC', '#inactive_cC', '#inactive_dC', '#inactive_eC', '#inactive_fC',
   '#inactive_aD', '#inactive_bD', '#inactive_cD', '#inactive_dD', '#inactive_eD', '#inactive_fD',
   '#inactive_aE', '#inactive_bE', '#inactive_cE', '#inactive_dE', '#inactive_eE', '#inactive_fE',
-  '#inactive_aF', '#inactive_bF', '#inactive_cF', '#inactive_dF', '#inactive_eF', '#inactive_fF'
+  '#inactive_aF', '#inactive_bF', '#inactive_cF', '#inactive_dF', '#inactive_eF', '#inactive_fF',
+  '#inactive_aG', '#inactive_bG', '#inactive_cG', '#inactive_dG', '#inactive_eG', '#inactive_fG'
 ];
 
 function selectData(ID, currentArray, letter, newArray) {
