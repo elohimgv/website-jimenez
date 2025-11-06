@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+	<!-- From /includes/ file -->
+	<div id="head-placeholder"></div>
+	<script src="/js/head.js"></script>
+	<script>
+		loadHead("Ejercicio 2020", "../data/",
+		"Ley General de Contabilidad Gubernamental. Ejercicio 2020 Ayuntamiento de Jiménez del Téul.");
+	</script>
+</head>
+
+<body class="kanit-light">
+	<div class="container">
+		<!-- Start row -->
+		<div class="row">
+			<!-- Start col -->
+			<div class="col">
+				<!-- Start Header -->
+				<header>
+					<div class="container text-white p-3 back-red">
+						<h1 class="display-1 text-center">2020</h1>
+					</div>
+				</header>
+				<!-- End Header -->
+			</div>
+			<!-- End col -->
+		</div>
+		<!-- End row -->
+	</div>
+	<div class="container">
+		<!-- Start Navbar -->
+		<!--From includes file-->
+		<div id="nav-placeholder"></div>
+		<script src="/js/nav.js"></script>
+		<script>
+			loadNavAuto();
+		</script>
+		<!-- End Navbar -->
+	</div>
+	<!-- End Navbar -->
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<img src="../data/e2020.png" loading="lazy" class="img-fluid" alt="Mujer asiática corriendo">
+			</div>
+		</div>
+	</div>
+	<!-- Start Main content -->
+	<main class="container">
+		<!-- Start row -->
+        <div class="container back-red">
+			<!-- Start row: ///////////////////// EJERCICIO 2020; B ///////////////////// -->
+			<div class="row">
+				<!-- Start col EJE20; B -->
+				<div class="col">
+					<h3><a class="text-white text-decoration-none clickable" onclick="toggleYears('B')">Ejercicio 2020</a></h3>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col; 
+					CUENTA PÚBLICA; B; 
+					2020
+				-->
+				<div class="col text-center border-bottom border-end" id="el_aB"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_aB" onclick="toggleDataFromYears('#dataaB', '#inactive_aB')">Cuenta pública</a></h5>
+				</div>
+				<!-- End col -->
+				<!-- Start col; 
+					BIENES MUEBLES ANUAL; B; 
+					2020
+				-->
+				<div class="col text-center border-bottom border-end" id="el_bB"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_bB" onclick="toggleDataFromYears('#databB', '#inactive_bB')">Bienes muebles anual</a></h5>
+				</div>
+				<!-- End col -->
+				<!-- Start col; 
+					CONSOLIDACIÓN; B; 
+					2020
+				-->
+				<div class="col text-center border-bottom border-end" id="el_cB"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_cB" onclick="toggleDataFromYears('#datacB', '#inactive_cB')">Consolidación</a></h5>
+				</div>
+				<!-- End col -->
+				<!-- Start col; 
+					INFORMACIÓN CONTABLE; B; 
+					2020
+				-->
+				<div class="col text-center border-bottom border-end" id="el_dB"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_dB" onclick="toggleDataFromYears('#datadB', '#inactive_dB')">Información contable</a></h5>
+				</div>
+				<!-- End col -->
+				<!-- Start col; 
+					INFORMACIÓN PRESUPUESTARIA; B; 
+					2020 
+				-->
+				<div class="col text-center border-bottom" id="el_eB"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_eB" onclick="toggleDataFromYears('#dataeB', '#inactive_eB')">Información presupuestaria</a></h5>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row -->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col dataaB; CUENTA PÚBLICA; 2020 -->
+				<div class="col" id="dataaB" style="display: none;">
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/cuenta_publica_2020.pdf" target="_blank">Cuenta pública</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col databB; BIENES MUEBLES ANUAL; 2020 -->
+				<div class="col" id="databB" style="display: none;">
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/bienes_muebles.pdf" target="_blank">Inventario de muebles</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col datacB; CONSOLIDACIÓN; 2020 -->
+				<div class="col" id="datacB" style="display: none;">
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_de_actividades.pdf" target="_blank">Estado de actividades</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_de_situacion_financiera-1-1.pdf" target="_blank">Estado de situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_de_variacion_en_la_hacienda_publica-1.pdf" target="_blank">Estado de variación en la Hacienda Pública</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado-de-cambios-de-situacion-financiera-1.pdf" target="_blank">Estado de cambios en la situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado-de-flujos_de_efectivo-1-1.pdf" target="_blank">Estado de flujos de efectivo</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col datadB; INFORMACIÓN CONTABLE; 2020 -->
+				<div class="col" id="datadB" style="display: none;">
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_de_actividades.pdf" target="_blank">Estado de actividades</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_de_situacion_financiera-1-1.pdf" target="_blank">Estado de situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_de_variacion_en_la_hacienda_publica-1.pdf" target="_blank">Estado de variación en la Hacienda Pública</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado-de-cambios-de-situacion-financiera-1.pdf" target="_blank">Estado de cambios en la situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado-de-flujos_de_efectivo-1-1.pdf" target="_blank">Estado de flujos de efectivo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_analitico_del_activo-2.pdf" target="_blank">Estado analítico del activo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_analitico_de_la_deuda_y_otros_pasivos-1.pdf" target="_blank">Estado analítico de la deuda y otros pasivos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/notas_a_los_estados_financieros.pdf" target="_blank">Notas a los estados financieros</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/balanza_de_comprobacion.pdf" target="_blank">Balanza de comprobación</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col dataeB; INFORMACIÓN CONTABLE; 2020 -->
+				<div class="col" id="dataeB" style="display: none;">
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_analitico_de_ingresos-2.pdf" target="_blank">Estado analítico de ingresos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_analitico_del_ejercicio_del_presupuesto_de_egresos_por_tipo_de_gasto.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de Egresos clasificación económica</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_analitico_del_presupuesto_de_egresos.pdf" target="_blank">Estado analítico del presupuesto de egresos clasificación administrativa</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2020/estado_analitico_del_ejercicio_del_presupuesto_de_egresos_clasificacion_funcional.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación funcional</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+        </div>
+        <!-- End row -->    
+	</main>
+	<!-- End Main -->
+	<!-- Start footer -->
+	<div class="container">
+		<!-- From /includes/ file -->
+		<div id="footer-placeholder"></div>
+		<script src="/js/footer.js"></script>
+		<script>
+			loadFooter({
+				containerFooter: "text-yellow back-black",
+				logoSrc: "../../data/yellow-logo.png",
+				fontColor: "text-yellow",
+				backColorFooter: "back-black"
+			});
+		</script>
+	</div>
+	<!-- End footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>

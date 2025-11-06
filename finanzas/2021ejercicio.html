@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+	<!-- From /includes/ file -->
+	<div id="head-placeholder"></div>
+	<script src="/js/head.js"></script>
+	<script>
+		loadHead("Ejercicio 2021", "../data/",
+		"Ley General de Contabilidad Gubernamental. Ejercicio 2021 Ayuntamiento de Jiménez del Téul.");
+	</script>
+</head>
+
+<body class="kanit-light">
+	<div class="container">
+		<!-- Start row -->
+		<div class="row">
+			<!-- Start col -->
+			<div class="col">
+				<!-- Start Header -->
+				<header>
+					<div class="container text-white p-3 back-red">
+						<h1 class="display-1 text-center">2021</h1>
+					</div>
+				</header>
+				<!-- End Header -->
+			</div>
+			<!-- End col -->
+		</div>
+		<!-- End row -->
+	</div>
+	<div class="container">
+		<!-- Start Navbar -->
+		<!--From includes file-->
+		<div id="nav-placeholder"></div>
+		<script src="/js/nav.js"></script>
+		<script>
+			loadNavAuto();
+		</script>
+		<!-- End Navbar -->
+	</div>
+	<!-- End Navbar -->
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<img src="../data/e2021.png" loading="lazy" class="img-fluid" alt="Una pequeña lancha varada">
+			</div>
+		</div>
+	</div>
+	<!-- Start Main content -->
+	<main class="container">
+		<!-- Start row -->
+        <div class="container back-red">
+			<!-- Start row: ///////////////////// EJERCICIO 2021; C ///////////////////// -->
+			<div class="row">
+				<!-- Start col EJE21; C -->
+				<div class="col">
+					<h3><a class="text-white text-decoration-none clickable" onclick="toggleYears('C')">Ejercicio 2021</a></h3>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col; 
+					CUENTA PÚBLICA; C; 
+					2021 -->
+				<div class="col text-center border-bottom border-end" id="el_aC"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_aC" onclick="toggleDataFromYears('#dataaC', '#inactive_aC')">Cuenta pública</a></h5>
+				</div>
+				<!-- End col -->
+				 <!-- Start col; 
+					INFORMACIÓN ANUAL; C; 
+					2021 -->
+				<div class="col text-center border-bottom border-end" id="el_bC"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_bC" onclick="toggleDataFromYears('#databC', '#inactive_bC')">Información anual</a></h5>
+				</div>
+				<!-- End col -->
+				<!-- Start col; 
+					PRIMER TRIMESTRE; C; 
+					2021 -->
+				<div class="col text-center border-bottom border-end" id="el_cC"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_cC" onclick="toggleDataFromYears('#datacC', '#inactive_cC')">Primer trimestre</a></h5>
+				</div>
+				<!-- End col -->
+				<!-- Start col; 
+					SEGUNDO TRIMESTRE; C; 
+					2021 -->
+				<div class="col text-center border-bottom border-end" id="el_dC"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_dC" onclick="toggleDataFromYears('#datadC', '#inactive_dC')">Segundo trimestre</a></h5>
+				</div>
+				<!-- End col -->
+				<!-- Start col; 
+					TERCER TRIMESTRE; C 
+					2021 -->
+				<div class="col text-center border-bottom border-end" id="el_eC"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_eC" onclick="toggleDataFromYears('#dataeC', '#inactive_eC')">Tercer trimestre</a></h5>
+				</div>
+				<!-- End col -->
+				<!-- Start col; 
+					CUARTO TRIMESTRE; C 
+					2021 -->
+				<div class="col text-center border-bottom" id="el_fC"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_fC" onclick="toggleDataFromYears('#datafC', '#inactive_fC')">Cuarto trimestre</a></h5>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row -->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col dataaC; CUENTA PÚBLICA; 2021 -->
+				<div class="col" id="dataaC" style="display: none;">
+					<!-- BIENES MUEBLES ANUAL; 2021 -->
+					<h5 class="text-white">Bienes muebles anual</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/bienes_muebles.pdf" target="_blank">Inventario de muebles</a></li>
+					</ul>
+					<!-- CONSOLIDACIÓN; 2021 -->
+					<h5 class="text-white">Consolidación</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_actividades.pdf" target="_blank">Estado de actividades</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_situaci%C3%B3n_financiera.pdf" target="_blank">Estado de situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_variaci%C3%B3n_en_la_hacienda_p%C3%BAblica.pdf" target="_blank">Estado de variación en la hacienda pública</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_cambios_en_la_situaci%C3%B3n_financiera.pdf" target="_blank">Estado de cambios en la situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_flujos_de_efectivo.pdf" target="_blank">Estado de flujos de efectivo</a></li>
+					</ul>
+					<!-- INFORMACIÓN CONTABLE; 2021 -->
+					<h5 class="text-white">Información contable</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_actividades.pdf" target="_blank">Estado de actividades</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_situaci%C3%B3n_financiera.pdf" target="_blank">Estado de situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_variaci%C3%B3n_en_la_hacienda_p%C3%BAblica.pdf" target="_blank">Estado de variación en la hacienda pública</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_cambios_en_la_situaci%C3%B3n_financiera.pdf" target="_blank">Estado de cambios en la situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_flujos_de_efectivo.pdf" target="_blank">Estado de flujos de efectivo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_activo.pdf" target="_blank">Estado analítico del activo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_de_la_deuda_y_otros_pasivos.pdf" target="_blank">Estado analítico de la deuda y otros pasivos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/notas_a_los_estados_financieros.pdf" target="_blank">Notas a los estados financieros</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/balanza_de_comprobaci%C3%B3n.pdf" target="_blank">Balanza de comprobación</a></li>
+					</ul>
+					<!-- INFORMACIÓN PRESUPUESTARIA; 2021 -->
+					<h5 class="text-white">Información presupuestaria</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_de_ingresos.pdf" target="_blank">Estado analítico de ingresos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_analitico_del_ejercicio_del_presupuesto_de_egresos_clasificacion_por_objeto_del_gasto.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación por objeto del gasto</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico+_del_ejercicio_del_presupuesto_de_egresos_clasificaci%C3%B3n_econ%C3%B3mica.pdf" target="_blank">Estado analítico del ejercicio del presupuesto egresos clasificación económica</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_clasificaci%C3%B3n_funcional.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación funcional </a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_por_cap%C3%ADtulo_del_gasto.pdf" target="_blank">Estado analítico del ejercicio del presupuesto por capítulo de gasto</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_del_ejercicio_del_presupuesto_por_cap%C3%ADtulo_del_gasto.pdf" target="_blank">Estado del ejercicio del presupuesto por capítulo de gasto</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col databC; INFORMACIÓN ANUAL; 2021 -->
+				<div class="col" id="databC" style="display: none;">
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/presupuesto_de_egresos.pdf" target="_blank">Presupuesto de egresos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/presupuesto_de_ingresos_aprobado.pdf" target="_blank">Presupuesto de ingresos aprobados</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/relaci%C3%B3n_de_cuentas_bancarias_productivas_especificas.pdf" target="_blank">Relación de cuentas bancarias productivas específicas</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col databC; 2021; 1erTri -->
+				<div class="col" id="datacC" style="display: none;">
+					<!-- INFORMACIÓN CONTABLE; 2021; 1erTri -->
+					<h5 class="text-white">Información contable</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_actividades-1.pdf" target="_blank">Estado de actividades</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_situacion_financiera-3.pdf" target="_blank">Estado de situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_variaci%C3%B3n_en_la_hacienda_p%C3%BAblica-3.pdf" target="_blank">Estado de variación en la hacienda pública</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_cambios_en_la_situacion_financiera-1erT.pdf" target="_blank">Estado de cambios en la situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_flujos_de_efectivo-2.pdf" target="_blank">Estado de flujos de efectivo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_analítico_del_activo-3.pdf" target="_blank">Estado analítico del activo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_de_la_deuda-y_otros_pasivos-4.pdf" target="_blank">Estado analítico de la deuda y otros pasivos</a></li>
+					</ul>
+					<!-- INFORMACIÓN PRESUPUESTARIA; 2021; 1erTri -->
+					<h5 class="text-white">Información presupuestaria</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_de_ingresos-3.pdf" target="_blank">Estado analítico de ingresos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_por_objeto_del_gasto-4.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación por objeto del gasto</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_econ%C3%B3mica-4.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación económica</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_administrativa-4.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación administrativa</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_funcional-1-1.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación funcional</a></li>
+					</ul>
+					<!-- INFORMACIÓN PROGRAMÁTICA; 2021; 1erTri -->
+					<h5 class="text-white">Información programática</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/gasto_por_categor%C3%ADa_program%C3%A1tica-3.pdf" target="_blank">Gasto por categoría programática</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/indicadores_de_postura_fiscal.pdf" target="_blank">Indicadores de postura fiscal</a></li>
+					</ul>
+					<!-- OTRAS OBLIGACIONES; 2021; 1erTri -->
+					<h5 class="text-white">Otras obligaciones</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/bienes_muebles_e_inmuebles-1erT2021.pdf" target="_blank">Bienes muebles inmuebles</a></li>
+					</ul>
+					<!-- TÍTULO V; 2021; 1erTri -->
+					<h5 class="text-white">Título V</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/anal%C3%ADtico_mensual_devengado_egresos.pdf" target="_blank">Calendario de presupuesto de egresos mensual</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/ayudas_sociales.pdf" target="_blank">Montos pagados por ayudas y subsidios</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/recursos_federales-1.pdf" target="_blank">Programas con recursos federales por orden de Gobierno</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/gasto_federalizado_y_reintegro_anual.pdf" target="_blank">Ejercicio y destino del gasto fedralizado y reintegros</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/fondos_federales_obligaciones.pdf" target="_blank">Obligaciones pagadas o garantizadas con fondos federales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/fondo_de_aportaci%C3%B3n_para_la_infraestructura_social.pdf" target="_blank">Fondo de aportaciones para la infraestructura social</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/FORTAMUN-4.pdf" target="_blank">FORTAMUN</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col datacC; 2021; 2doTri -->
+				<div class="col" id="datadC" style="display: none;">
+					<!-- INFORMACIÓN CONTABLE; 2021; 2doTri -->
+					<h5 class="text-white">Información contable</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado-de-actividades-2.pdf" target="_blank">Estado de actividades</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_situacion_financiera-1-2.pdf" target="_blank">Estado de situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_variaci%C3%B3n_en_la_hacienda_p%C3%BAblica-1.pdf" target="_blank">Estado de variación en la hacienda pública</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_cambios_en_la_situaci%C3%B3n_financiera-2doT.pdf" target="_blank">Estado de cambios en la situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_flujos_de_efectivo-1-2.pdf" target="_blank">Estado de flujos de efectivo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_nal%C3%ADtico_del_activo-1-1.pdf" target="_blank">Estado analítico del activo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_pasivo-1.pdf" target="_blank">Estado analítico del pasivo</a></li>
+					</ul>
+					<!-- INFORMACIÓN PRESUPUESTARIA; 2021; 2doTri -->
+					<h5 class="text-white">Información presupuestaria</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_de_ingresos-1-1.pdf" target="_blank">Estado analítico de ingresos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_por_objeto_del_gasto.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación por objeto del gasto</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_econ%C3%B3mica.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación económica</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_administrativa.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación administrativa</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_funcional.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación funcional</a></li>
+					</ul>
+					<!-- INFORMACIÓN PROGRAMÁTICA; 2021; 2doTri -->
+					<h5 class="text-white">Información programática</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/gasto_por_categor%C3%ADa_program%C3%A1tica-1-1.pdf" target="_blank">Gasto por categoría programática</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/indicadores_de_postura_fiscal-1.pdf" target="_blank">Indicadores de postura fiscal</a></li>
+					</ul>
+					<!-- OTRAS OBLIGACIONES; 2021; 2doTri -->
+					<h5 class="text-white">Otras obligaciones</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/bienes_muebles_e_inmuebles-2doT.pdf" target="_blank">Bienes muebles e inmuebles</a></li>
+					</ul>
+					<!-- TÍTULO V; 2021; 2doTri -->
+					<h5 class="text-white">Título V</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/calendario_de_ingreso_base_mensual.pdf" target="_blank">Calendario de ingresos mensuales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/calendario_del_presupuesto_de_egresos_base_mensual.pdf" target="_blank">Calendario del presupuesto de egresos mensuales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/ayudas_sociales-1.pdf" target="_blank">Montos pagados por ayudas y subsidios</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/recursos_federales-2.pdf" target="_blank">Programas con recursos federales por orden de gobierno</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/gasto_federalizado_y_reintegros.pdf" target="_blank">Ejercicio y destino del gasto federalizado y reintegros</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/fondos_federales_obligaciones-1.pdf" target="_blank">Obligaciones pagadas o garantizadas con fondos federales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/fondo_de_aportaciones_para_la_infraestructura_social-1.pdf" target="_blank">Fondo de aportaciones para la infraestructura social</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/FORTAMUN-1-3.pdf" target="_blank">FORTAMUN</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col dataeC; 2021; 3erTri -->
+				<div class="col" id="dataeC" style="display: none;">
+					<!-- INFORMACIÓN CONTABLE; 2021; 3erTri -->
+					<h5 class="text-white">Información contable</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_actividades-1-1.pdf" target="_blank">Estado de actividades</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_situaci%C3%B3n_financiera-2-1.pdf" target="_blank">Estado de situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_variaci%C3%B3n_en_la_hacienda_p%C3%BAblica-1-1.pdf" target="_blank">Estado de variación en la hacienda pública</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_cambios_en_la_situaci%C3%B3n_financiera-2.pdf" target="_blank">Estado de cambios en la situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_flujos_de_efectivo-2-1.pdf" target="_blank">Estado de flujos de efectivo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_activo-2-1.pdf" target="_blank">Estado analítico del activo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_pasivo-1-1.pdf" target="_blank">Estado analítico del pasivo</a></li>
+					</ul>
+					<!-- INFORMACIÓN PRESUPUESTARIA; 2021; 3erTri -->
+					<h5 class="text-white">Información presupuestaria</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_de_ingresos-2-1.pdf" target="_blank">Estado analítico de ingresos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n-por_objeto_del_gasto-1-1.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación por objeto del gasto</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n-econ%C3%B3mica-1-1.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación económica</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_administrativa-1-1.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación administrativa</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_funcional-2-1.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación funcional</a></li>
+					</ul>
+					<!-- INFORMACIÓN PROGRAMÁTICA; 2021; 3erTri -->
+					<h5 class="text-white">Información programática</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/gasto_por_categor%C3%ADa_program%C3%A1tica-2-1.pdf" target="_blank">Gasto por categoría programática</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/indicadores_de_postura_fiscal-2.pdf" target="_blank">Indicadores de postura fiscal</a></li>
+					</ul>
+					<!-- OTRAS OBLIGACIONES; 2021; 3erTri -->
+					<h5 class="text-white">Otras obligaciones</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/bienes_muebles_e_inmuebles-2.pdf" target="_blank">Bienes muebles e inmuebles</a></li>
+					</ul>
+					<!-- TÍTULO V; 2021; 3erTri -->
+					<h5 class="text-white">Título V</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/calendario_de_ingresos_base_mensual-1.pdf" target="_blank">Calendario de ingresos mensuales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/calendario_del_presupuesto_de_egresos_base_mensual-1.pdf" target="_blank">Calendario del presupuesto de egresos mensuales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/ayudas-sociales-2.pdf" target="_blank">Montos pagados por ayudas y subsidios</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/recursos_federales-3.pdf" target="_blank">Programas con recursos federales por orden de gobierno</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/ejercicio_y_destino_del_gasto_federalizado_y_reintegros-3erT.pdf" target="_blank">Ejercicio y destino del gasto federalizado y reintegros</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/fondos_federales_y_obligaciones-2.pdf" target="_blank">Obligaciones pagadas o garantizadas con fondos federales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/fondo_de_aportaci%C3%B3n_para_la_infraestrutura_social.pdf" target="_blank">Fondo de aportaciones para la infraestructura social</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/FORTAMUN-2-2.pdf" target="_blank">FORTAMUN</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col datafC; 2021; 4toTri -->
+				<div class="col" id="datafC" style="display: none;">
+					<!-- INFORMACIÓN CONTABLE; 2021; 4toTri -->
+					<h5 class="text-white">Información contable</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_actividades-4T.pdf" target="_blank">Estado de actividades</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_situaci%C3%B3n_financiera-4T.pdf" target="_blank">Estado de situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_variaci%C3%B3n_en_la_hacienda_p%C3%BAblica_4T.pdf" target="_blank">Estado de variación en la hacienda pública</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_cambios_en_la_situaci%C3%B3n_financiera-4T.pdf" target="_blank">Estado de cambios en la situación financiera</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_de_flujos_de_efectivo-4T.pdf" target="_blank">Estado de flujos de efectivo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_activo-4T.pdf" target="_blank">Estado analítico del activo</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_pasivo-4T.pdf" target="_blank">Estado analítico del pasivo</a></li>
+					</ul>
+					<!-- INFORMACIÓN PRESUPUESTARIA; 2021; 4toTri -->
+					<h5 class="text-white">Información presupuestaria</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_de_ingresos-4T.pdf" target="_blank">Estado analítico de ingresos</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egreso_en_base_clasificaci%C3%B3n_por_objeto_del_gasto-4T.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación por objeto del gasto</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_econ%C3%B3mica-4T.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación económica</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_administrativa-4T.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación administrativa</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/estado_anal%C3%ADtico_del_ejercicio_del_presupuesto_de_egresos_en_base_clasificaci%C3%B3n_funcional-4T.pdf" target="_blank">Estado analítico del ejercicio del presupuesto de egresos clasificación funcional</a></li>
+					</ul>
+					<!-- INFORMACIÓN PROGRAMÁTICA; 2021; 4toTri -->
+					<h5 class="text-white">Información programática</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/gasto_por_categor%C3%ADa_program%C3%A1tica-4T.pdf" target="_blank">Gasto por categoría programática</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/indicadores_de_postura_fiscal-4T.pdf" target="_blank">Indicadores de postura fiscal</a></li>
+					</ul>
+					<!-- OTRAS OBLIGACIONES; 2021; 4toTri -->
+					<h5 class="text-white">Otras obligaciones</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/bienes_muebles_e_inmuebles-4T.pdf" target="_blank">Bienes muebles e inmuebles</a></li>
+					</ul>
+					<!-- TÍTULO V; 2021; 4toTri -->
+					<h5 class="text-white">Título V</h5>
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/calendario_de_ingresos_base_mensual-4T.pdf" target="_blank">Calendario de ingresos mensuales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/calendario_del_presupuesto_de_egresos_base_mensual-4T.pdf" target="_blank">Calendario del presupuesto de egresos mensuales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/ayudas_sociales-4T.pdf" target="_blank">Montos pagados por ayudas y subsidios</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/recursos_federales-4T.pdf" target="_blank">Programas con recursos federales por orden de gobierno</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/gastos_federalizados_y_reintegros-4T.pdf" target="_blank">Ejercicio y destino del gasto federalizado y reintegros</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/fondos_federales_y_obligaciones-4T.pdf" target="_blank">Obligaciones pagadas o garantizadas con fondos federales</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/fondo_de_aportaciones_para_la_infraestructura_social-4T.pdf" target="_blank">Fondo de aportaciones para la infraestructura social</a></li>
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2021/FORTAMUN-4T.pdf" target="_blank">FORTAMUN</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			<!-- End row ////////-->
+        </div>
+        <!-- End row -->    
+	</main>
+	<!-- End Main -->
+	<!-- Start footer -->
+	<div class="container">
+		<!-- From /includes/ file -->
+		<div id="footer-placeholder"></div>
+		<script src="/js/footer.js"></script>
+		<script>
+			loadFooter({
+				containerFooter: "text-yellow back-black",
+				logoSrc: "../../data/yellow-logo.png",
+				fontColor: "text-yellow",
+				backColorFooter: "back-black"
+			});
+		</script>
+	</div>
+	<!-- End footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
