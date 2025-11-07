@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+	<!-- From /includes/ file -->
+	<div id="head-placeholder"></div>
+	<script src="/js/head.js"></script>
+	<script>
+		loadHead("Ejercicio 2019", "../data/",
+		"Ley General de Contabilidad Gubernamental. Ejercicio 2019 Ayuntamiento de Jiménez del Téul.");
+	</script>
+</head>
+
+<body class="kanit-light">
+	<div class="container">
+		<!-- Start row -->
+		<div class="row">
+			<!-- Start col -->
+			<div class="col">
+				<!-- Start Header -->
+				<header>
+					<div class="container text-white p-3 back-red">
+						<h1 class="display-1 text-center">2019</h1>
+					</div>
+				</header>
+				<!-- End Header -->
+			</div>
+			<!-- End col -->
+		</div>
+		<!-- End row -->
+	</div>
+	<div class="container">
+		<!-- Start Navbar -->
+		<!--From includes file-->
+		<div id="nav-placeholder"></div>
+		<script src="/js/nav.js"></script>
+		<script>
+			loadNavAuto();
+		</script>
+		<!-- End Navbar -->
+	</div>
+	<!-- End Navbar -->
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<img src="../data/e2019.png" loading="lazy" class="img-fluid" alt="Mujer caminando en el mar">
+			</div>
+		</div>
+	</div>
+	<!-- Start Main content -->
+	<main class="container">
+		<!-- Start row -->
+        <div class="container back-red">
+			<!-- Start row: ///////////////////// EJERCICIO 2019; A ///////////////////// -->
+			<div class="row">
+				<!-- Start col EJE19; A -->
+				<div class="col">
+					<h3><a class="text-white text-decoration-none clickable" onclick="toggleYears('A')">Ejercicio 2019</a></h3>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+			<div class="row">
+				<!-- Start col; 
+					CUENTA PÚBLICA; A; 
+					2019
+				-->
+				<div class="col text-center border-bottom" id="el_aA"  style="display: none;">
+					<h5><a class="text-white text-decoration-none clickable" id="inactive_aA" onclick="toggleDataFromYears('#dataaA', '#inactive_aA')">Cuenta pública</a></h5>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row -->
+			<!-- Start row ////////-->
+			<div class="row">
+				<!-- Start col; dataaA CUENTA PÚBLICA; 2019 -->
+				<div class="col" id="dataaA" style="display: none;">
+					<ul class="white_bullet">
+						<li><a class="text-white" href="https://websitejimenez.s3.us-east-2.amazonaws.com/finanzas/2019/cuenta_publica_2019.pdf" target="_blank">Cuenta pública</a></li>
+					</ul>
+				</div>
+				<!-- End col -->
+			</div>
+			<!-- End row ////////-->
+        </div>
+        <!-- End row -->    
+	</main>
+	<!-- End Main -->
+	<!-- Start footer -->
+	<div class="container">
+		<!-- From /includes/ file -->
+		<div id="footer-placeholder"></div>
+		<script src="/js/footer.js"></script>
+		<script>
+			loadFooter({
+				containerFooter: "text-yellow back-black",
+				logoSrc: "../../data/yellow-logo.png",
+				fontColor: "text-yellow",
+				backColorFooter: "back-black"
+			});
+		</script>
+	</div>
+	<!-- End footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
