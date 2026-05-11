@@ -13,13 +13,13 @@ let yearsArr = [
   '#_2021C', '#_2022C', '#_2023C', '#_2024C',
   '#el_aA', '#el_bA', '#el_cA', '#el_dA', '#el_eA', '#el_fA', '#el_gA', '#el_hA', '#el_iA', '#el_jA', '#el_kA', '#el_lA', '#el_mA', '#el_nA', '#el_oA',
   // remanent to do something; finanzas.
-  '#el_aB', '#el_bB', '#el_cB', '#el_dB', '#el_eB', '#el_fB',
-  '#el_aC', '#el_bC', '#el_cC', '#el_dC', '#el_eC', '#el_fC',
-  '#el_aD', '#el_bD', '#el_cD', '#el_dD', '#el_eD', '#el_fD',
-  '#el_aE', '#el_bE', '#el_cE', '#el_dE', '#el_eE', '#el_fE',
-  '#el_aF', '#el_bF', '#el_cF', '#el_dF', '#el_eF', '#el_fF',
-  '#el_aG', '#el_bG', '#el_cG', '#el_dG', '#el_eG', '#el_fG',
-  '#el_aH', '#el_bH', '#el_cH', '#el_dH', '#el_eH', '#el_fH'
+  '#el_aB', '#el_bB', '#el_cB', '#el_dB', '#el_eB', '#el_fB', '#el_gB', '#el_hB', //////
+  '#el_aC', '#el_bC', '#el_cC', '#el_dC', '#el_eC', '#el_fC', '#el_gC', '#el_hC', //////
+  '#el_aD', '#el_bD', '#el_cD', '#el_dD', '#el_eD', '#el_fD', '#el_gD', '#el_hD', //////
+  '#el_aE', '#el_bE', '#el_cE', '#el_dE', '#el_eE', '#el_fE', '#el_gE', '#el_hE', //////
+  '#el_aF', '#el_bF', '#el_cF', '#el_dF', '#el_eF', '#el_fF', '#el_gF', '#el_hF', //////
+  '#el_aG', '#el_bG', '#el_cG', '#el_dG', '#el_eG', '#el_fG', '#el_gG', '#el_hG', //////
+  '#el_aH', '#el_bH', '#el_cH', '#el_dH', '#el_eH', '#el_fH', '#el_gH', '#el_hH' 
 ];
 
 let dataYearsArr = [
@@ -29,13 +29,13 @@ let dataYearsArr = [
   '#data2021C', '#data2022C', '#data2023C', '#data2024C',
   '#dataaA', '#databA', '#datacA', '#datadA', '#dataeA', '#datafA', '#datagA', '#datahA', '#dataiA', '#datajA', '#datakA', '#datalA', '#datamA', '#datanA', '#dataoA',
   // remanent to do something; finanzas.
-  '#dataaB', '#databB', '#datacB', '#datadB', '#dataeB', '#datafB',
-  '#dataaC', '#databC', '#datacC', '#datadC', '#dataeC', '#datafC',
-  '#dataaD', '#databD', '#datacD', '#datadD', '#dataeD', '#datafD',
-  '#dataaE', '#databE', '#datacE', '#datadE', '#dataeE', '#datafE',
-  '#dataaF', '#databF', '#datacF', '#datadF', '#dataeF', '#datafF',
-  '#dataaG', '#databG', '#datacG', '#datadG', '#dataeG', '#datafG',
-  '#dataaH', '#databH', '#datacH', '#datadH', '#dataeH', '#datafH'
+  '#dataaB', '#databB', '#datacB', '#datadB', '#dataeB', '#datafB', '#datagB', '#datahB', //////
+  '#dataaC', '#databC', '#datacC', '#datadC', '#dataeC', '#datafC', '#datagC', '#datahC', ////
+  '#dataaD', '#databD', '#datacD', '#datadD', '#dataeD', '#datafD', '#datagD', '#datahD', ////
+  '#dataaE', '#databE', '#datacE', '#datadE', '#dataeE', '#datafE', '#datagE', '#datahE', ////
+  '#dataaF', '#databF', '#datacF', '#datadF', '#dataeF', '#datafF', '#datagF', '#datahF', ////
+  '#dataaG', '#databG', '#datacG', '#datadG', '#dataeG', '#datafG', '#datagG', '#datahG', ////
+  '#dataaH', '#databH', '#datacH', '#datadH', '#dataeH', '#datafH', '#datagH', '#datahH'
 ];
 
 let activeUnderlineArr = [ 
@@ -45,13 +45,13 @@ let activeUnderlineArr = [
   '#inactive2021C', '#inactive2022C', '#inactive2023C', '#inactive2024C',
   '#inactive_aA', '#inactive_bA', '#inactive_cA', '#inactive_dA', '#inactive_eA', '#inactive_fA', '#inactive_gA', '#inactive_hA', '#inactive_iA', '#inactive_jA', '#inactive_kA', '#inactive_lA', '#inactive_mA', '#inactive_nA', '#inactive_oA',
   // remanent to do something; finanzas.
-  '#inactive_aB', '#inactive_bB', '#inactive_cB', '#inactive_dB', '#inactive_eB', '#inactive_fB',
-  '#inactive_aC', '#inactive_bC', '#inactive_cC', '#inactive_dC', '#inactive_eC', '#inactive_fC',
-  '#inactive_aD', '#inactive_bD', '#inactive_cD', '#inactive_dD', '#inactive_eD', '#inactive_fD',
-  '#inactive_aE', '#inactive_bE', '#inactive_cE', '#inactive_dE', '#inactive_eE', '#inactive_fE',
-  '#inactive_aF', '#inactive_bF', '#inactive_cF', '#inactive_dF', '#inactive_eF', '#inactive_fF',
-  '#inactive_aG', '#inactive_bG', '#inactive_cG', '#inactive_dG', '#inactive_eG', '#inactive_fG',
-  '#inactive_aH', '#inactive_bH', '#inactive_cH', '#inactive_dH', '#inactive_eH', '#inactive_fH'
+  '#inactive_aB', '#inactive_bB', '#inactive_cB', '#inactive_dB', '#inactive_eB', '#inactive_fB', '#inactive_gB', '#inactive_hB', ////
+  '#inactive_aC', '#inactive_bC', '#inactive_cC', '#inactive_dC', '#inactive_eC', '#inactive_fC', '#inactive_gC', '#inactive_hC', ////
+  '#inactive_aD', '#inactive_bD', '#inactive_cD', '#inactive_dD', '#inactive_eD', '#inactive_fD', '#inactive_gD', '#inactive_hD', ////
+  '#inactive_aE', '#inactive_bE', '#inactive_cE', '#inactive_dE', '#inactive_eE', '#inactive_fE', '#inactive_gE', '#inactive_hE', ////
+  '#inactive_aF', '#inactive_bF', '#inactive_cF', '#inactive_dF', '#inactive_eF', '#inactive_fF', '#inactive_gF', '#inactive_hF', ////
+  '#inactive_aG', '#inactive_bG', '#inactive_cG', '#inactive_dG', '#inactive_eG', '#inactive_fG', '#inactive_gG', '#inactive_hG', ////
+  '#inactive_aH', '#inactive_bH', '#inactive_cH', '#inactive_dH', '#inactive_eH', '#inactive_fH', '#inactive_gH', '#inactive_hH'
 ];
 
 function selectData(ID, currentArray, letter, newArray) {
@@ -131,39 +131,33 @@ function toggleYears(letter) {
 	}
 }
 
-// When a year is selected, only show the info that correspond to it 
 function toggleDataFromYears(dataIdYear, idYearUnderline) {
-	const data = document.querySelector(dataIdYear);
-	const activeUnderline = document.querySelector(idYearUnderline);
-	const allActiveUnderlines = document.querySelectorAll(activeUnderlineArr.join(', '));
-	const dataYear = document.querySelectorAll(dataYearsArr.join(', '));
-	const originalClassList = ['text-white', 'text-decoration-none', 'clickable'];
-	// Obtain the value from class attribute
-	const classList = activeUnderline.getAttribute('class');
-	// Divide the value from attribute into an array
-	const valuesClass = classList.split(' ');
-	// Delete the value "text-decoration-none" from array
-	valuesClass.splice(valuesClass.indexOf('text-decoration-none'), 1);	
-	// Establish the new value from class attribute
-	activeUnderline.setAttribute('class', valuesClass.join(' '));
-	
-  	// If the links to files are hidden, we show it, otherwise, we hidden it.
-	if (data.style.display === 'none') {
-		// Show the data links
-		data.style.display = 'block';
-		// Hide the data links of the other year 
-		for (let count = 0; count < dataYear.length; count++) {
-			const underli = allActiveUnderlines[count];
-			const dataLink = dataYear[count];
-			if (dataLink !== data && underli !== activeUnderline) {
-				dataLink.style.display = 'none';
-				underli.setAttribute('class', originalClassList.join(' '));
-			}
-		}
-	} else {
-		data.style.display = 'none';
-		// Reset to the original values in class attribute
-		valuesClass.splice(0, 0, 'text-white', 'text-decoration-none', 'clickable');
-		activeUnderline.setAttribute('class', valuesClass.join(' '));
-	}																							
+    const data = document.querySelector(dataIdYear);
+    const activeUnderline = document.querySelector(idYearUnderline);
+    
+    // Seleccionamos todos los posibles contenedores y subrayados
+    const allDataYears = document.querySelectorAll(dataYearsArr.join(', '));
+    const allActiveUnderlines = document.querySelectorAll(activeUnderlineArr.join(', '));
+    
+    const originalClassList = 'text-white text-decoration-none clickable';
+    const activeClassList = 'text-white clickable'; // Sin el "text-decoration-none" para que se subraye
+
+    // Si el que clickeamos ya estaba abierto, simplemente lo cerramos
+    if (data.style.display === 'block') {
+        data.style.display = 'none';
+        activeUnderline.setAttribute('class', originalClassList);
+    } 
+    else {
+        // 1. PRIMERO LIMPIAMOS: Ocultamos TODOS los bloques de datos y reseteamos estilos
+        for (let i = 0; i < allDataYears.length; i++) {
+            allDataYears[i].style.display = 'none';
+            if (allActiveUnderlines[i]) {
+                allActiveUnderlines[i].setAttribute('class', originalClassList);
+            }
+        }
+
+        // 2. LUEGO ACTIVAMOS: Mostramos solo el que el usuario seleccionó
+        data.style.display = 'block';
+        activeUnderline.setAttribute('class', activeClassList);
+    }
 }
