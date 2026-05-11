@@ -4,7 +4,7 @@
 // and C = 3. It represent the position of the
 // office. Not all fraction has explicity
 // the office name; sometimes just the years. 
-const ID_FOR_EACH_OFFICE = ['A', 'B', 'C', 'D', 'E', 'F', 'G']; 
+const ID_FOR_EACH_OFFICE = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']; 
 
 let yearsArr = [
   '#_2020A', // Be carful with this line, isn't allow
@@ -18,7 +18,8 @@ let yearsArr = [
   '#el_aD', '#el_bD', '#el_cD', '#el_dD', '#el_eD', '#el_fD',
   '#el_aE', '#el_bE', '#el_cE', '#el_dE', '#el_eE', '#el_fE',
   '#el_aF', '#el_bF', '#el_cF', '#el_dF', '#el_eF', '#el_fF',
-  '#el_aG', '#el_bG', '#el_cG', '#el_dG', '#el_eG', '#el_fG'
+  '#el_aG', '#el_bG', '#el_cG', '#el_dG', '#el_eG', '#el_fG',
+  '#el_aH', '#el_bH', '#el_cH', '#el_dH', '#el_eH', '#el_fH'
 ];
 
 let dataYearsArr = [
@@ -33,7 +34,8 @@ let dataYearsArr = [
   '#dataaD', '#databD', '#datacD', '#datadD', '#dataeD', '#datafD',
   '#dataaE', '#databE', '#datacE', '#datadE', '#dataeE', '#datafE',
   '#dataaF', '#databF', '#datacF', '#datadF', '#dataeF', '#datafF',
-  '#dataaG', '#databG', '#datacG', '#datadG', '#dataeG', '#datafG'
+  '#dataaG', '#databG', '#datacG', '#datadG', '#dataeG', '#datafG',
+  '#dataaH', '#databH', '#datacH', '#datadH', '#dataeH', '#datafH'
 ];
 
 let activeUnderlineArr = [ 
@@ -48,7 +50,8 @@ let activeUnderlineArr = [
   '#inactive_aD', '#inactive_bD', '#inactive_cD', '#inactive_dD', '#inactive_eD', '#inactive_fD',
   '#inactive_aE', '#inactive_bE', '#inactive_cE', '#inactive_dE', '#inactive_eE', '#inactive_fE',
   '#inactive_aF', '#inactive_bF', '#inactive_cF', '#inactive_dF', '#inactive_eF', '#inactive_fF',
-  '#inactive_aG', '#inactive_bG', '#inactive_cG', '#inactive_dG', '#inactive_eG', '#inactive_fG'
+  '#inactive_aG', '#inactive_bG', '#inactive_cG', '#inactive_dG', '#inactive_eG', '#inactive_fG',
+  '#inactive_aH', '#inactive_bH', '#inactive_cH', '#inactive_dH', '#inactive_eH', '#inactive_fH'
 ];
 
 function selectData(ID, currentArray, letter, newArray) {
