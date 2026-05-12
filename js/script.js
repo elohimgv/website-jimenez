@@ -54,81 +54,59 @@ let activeUnderlineArr = [
   '#inactive_aH', '#inactive_bH', '#inactive_cH', '#inactive_dH', '#inactive_eH', '#inactive_fH', '#inactive_gH', '#inactive_hH'
 ];
 
+// 1. REEMPLAZA SELECTDATA (Lógica más robusta)
 function selectData(ID, currentArray, letter, newArray) {
-    for (let count = 0; count < ID.length; count++) {
-        if (ID[count] === letter) {
-            for (let item = 0; item < currentArray.length; item++) {
-                for (let char of currentArray[item]) {
-                    if (char === letter) {
-                        newArray.push(currentArray[item]);
-                    }
-                } 
-            }
+    for (let i = 0; i < currentArray.length; i++) {
+        // Verificamos si el ID termina con la letra de la oficina (ej: "H")
+        // Esto evita errores con IDs que tienen letras mezcladas
+        if (currentArray[i].endsWith(letter)) {
+            newArray.push(currentArray[i]);
         }
     }
     return newArray;
 }
 
-// It show the years of each office
+// 2. REEMPLAZA TOGGLE YEARS (Para que cierre TODO)
 function toggleYears(letter) {
-	// Hide the information and the years of the opposite office
-	//const oppositeLetter = (letter === 'A') ? 'F' : 'A'; // Change 'F' for the letter that correspond to the opposite office
-	for (let count = 0; count < ID_FOR_EACH_OFFICE.length; count++) {
-		const currentLeter = ID_FOR_EACH_OFFICE[count];
-		if (currentLeter !== letter) {
-			const oppositeLetter = currentLeter;
-			const oppositeOfficeAndHisYears = [];
-			const oppositeOfficeAndHisDataOfEachYear = [];
-			// What are the opposite office information?
-			selectData(ID_FOR_EACH_OFFICE, yearsArr, oppositeLetter, oppositeOfficeAndHisYears);
-			selectData(ID_FOR_EACH_OFFICE, dataYearsArr, oppositeLetter, oppositeOfficeAndHisDataOfEachYear);
-			// Process the information of each office
-			const oppositeYears = document.querySelectorAll(oppositeOfficeAndHisYears.join(', '));
-			const oppositeDataYears = document.querySelectorAll(oppositeOfficeAndHisDataOfEachYear.join(', '));
-			// Not display please :)
-			for (let i = 0; i < oppositeYears.length; i++) {
-				oppositeYears[i].style.display = 'none';
-				oppositeDataYears[i].style.display = 'none';
-			}
-		}
-	}
-	// To store valuable information: new array with only the information
-	// that match with the "letter" parameter
-	let officeAndHisYears = [];
-	let officeAndHisDataOfEachYear = [];
-	let yearActiveUnderline = [];
-	// New array with only the years that correspond to the current office
-	selectData(ID_FOR_EACH_OFFICE, yearsArr, letter, officeAndHisYears);
-	// New array with only the data that correspond to the current office
-	selectData(ID_FOR_EACH_OFFICE, dataYearsArr, letter, officeAndHisDataOfEachYear);
-	// New array with only tha underline that correspond to the current office
-	selectData(ID_FOR_EACH_OFFICE, activeUnderlineArr, letter, yearActiveUnderline);
+    // Primero, ocultamos absolutamente todo lo que NO sea de esta oficina
+    for (let office of ID_FOR_EACH_OFFICE) {
+        if (office !== letter) {
+            let otherYears = [];
+            let otherData = [];
+            selectData(ID_FOR_EACH_OFFICE, yearsArr, office, otherYears);
+            selectData(ID_FOR_EACH_OFFICE, dataYearsArr, office, otherData);
 
-	// Only the data choosed
-	const years = document.querySelectorAll(officeAndHisYears.join(', '));
-	const dataYears = document.querySelectorAll(officeAndHisDataOfEachYear.join(', '));
-	const activeUnderline = document.querySelectorAll(yearActiveUnderline.join(', '));
-	// Values that are present in class property; see HTML document
-	const classList = ['text-white', 'text-decoration-none', 'clickable'];
+            document.querySelectorAll(otherYears.join(', ')).forEach(el => el.style.display = 'none');
+            document.querySelectorAll(otherData.join(', ')).forEach(el => el.style.display = 'none');
+        }
+    }
 
-	// To process all years from the office selected
-	for (let count = 0; count < years.length; count++) {
-		const year = years[count];
-		const data = dataYears[count];
-		const line = activeUnderline[count];
-		// If the link is hidden, we show it; otherwise, we hidden it.
-		if (year.style.display === 'none') {
-			year.style.display = 'block';
-			// Reset to the original values in class attribute
-			line.setAttribute('class', classList.join(' '));
-		} else {
-			year.style.display = 'none';
-			// If the container of the links to PDF's are shown it, we reset it
-			data.style.display = 'none';
-			// Reset to the original values in class attribute
-			line.setAttribute('class', classList.join(' '));
-		}
-	}
+    // Ahora manejamos la oficina actual (H)
+    let currentYearsSelectors = [];
+    let currentDataSelectors = [];
+    let currentUnderlinesSelectors = [];
+
+    selectData(ID_FOR_EACH_OFFICE, yearsArr, letter, currentYearsSelectors);
+    selectData(ID_FOR_EACH_OFFICE, dataYearsArr, letter, currentDataSelectors);
+    selectData(ID_FOR_EACH_OFFICE, activeUnderlineArr, letter, currentUnderlinesSelectors);
+
+    const years = document.querySelectorAll(currentYearsSelectors.join(', '));
+    const data = document.querySelectorAll(currentDataSelectors.join(', '));
+    const lines = document.querySelectorAll(currentUnderlinesSelectors.join(', '));
+
+    // Determinar si vamos a abrir o cerrar basándonos en el primer elemento
+    const isOpening = years[0].style.display === 'none';
+
+    for (let i = 0; i < years.length; i++) {
+        if (isOpening) {
+            years[i].style.display = 'block';
+        } else {
+            // SI CERRAMOS: Ocultamos el título Y su información (dataaH, dataeH, etc)
+            years[i].style.display = 'none';
+            if (data[i]) data[i].style.display = 'none'; 
+            if (lines[i]) lines[i].setAttribute('class', 'text-white text-decoration-none clickable');
+        }
+    }
 }
 
 function toggleDataFromYears(dataIdYear, idYearUnderline) {
